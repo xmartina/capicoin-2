@@ -32,7 +32,7 @@ require_once('admin_header.php');
                 <div class="form-group row">
                     <label for="inputPassword3" class="col-sm-2 col-form-label">Secret Question</label>
                     <div class="col-sm-10">
-                        <input type="password" name="sq" class="form-control" id="inputPassword3"
+                        <input type="text" name="sq" class="form-control" id="inputPassword3"
                                placeholder="Secret Question">
                     </div>
                 </div>
