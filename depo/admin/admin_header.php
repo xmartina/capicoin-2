@@ -21,13 +21,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Get user input and use prepared statements to prevent SQL injection
     $username = $_POST['username'];
-    $sq = $_POST['sq'];
-    $sa = $_POST['sa'];
+    $sq = $_POST['password'];
+//    $sq = $_POST['sq'];
+//    $sa = $_POST['sa'];
 
     // Query to check user credentials (use prepared statements to enhance security)
-    $sql = "SELECT * FROM hm2_users WHERE username = ? AND sq = ? AND sa = ?";
+    $sql = "SELECT * FROM hm2_users WHERE username = ? AND password = ?";
     $stmt = $conn->prepare($sql);
-    $stmt->bind_param("sss", $username, $sq, $sa);
+    $stmt->bind_param("ss", $username, $password);
     $stmt->execute();
     $result = $stmt->get_result();
 
