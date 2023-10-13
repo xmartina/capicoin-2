@@ -15,33 +15,24 @@ require_once ('admin_header.php');
     <link rel="stylesheet" href="assets/css/custom.css">
 </head>
 <body>
-    <div class="position-relative login_relative">
-        <div class="position-absolute login_absolute">
-            <div class="login_overlay_behind"></div>
-            <div class="h-100 w-100">
-                <div class="py-4">
-                    <h2>Admin Login</h2>
-                    <p>Welcome to Admin, login to your admin dashboard using your admin details</p>
-                </div>
-                <div class="py-5">
-                    <form action="">
-                        <div class="admin_form">
-                            <label for="user_name">User Name
-                                <input type="text" class="admin_form_input" placeholder="e.g user@admin.com">
-                            </label>
+    <div class="py-4">
 
-                            <label for="">Password
-                                <input type="password" class="admin_form_input" placeholder="login password">
-                            </label>
-                        </div>
-                    </form>
+        <form>
+            <div class="form-group row">
+                <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" name="username" id="inputEmail3" placeholder="User Name">
                 </div>
             </div>
-
-        </div>
+            <div class="form-group row">
+                <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                <div class="col-sm-10">
+                    <input type="password" name="password" class="form-control" id="inputPassword3" placeholder="Password">
+                </div>
+            </div>
+        </form>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" ></script>
-
 </body>
 </html>
