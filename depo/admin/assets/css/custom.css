@@ -2,6 +2,7 @@
     background-image: url("/depo/admin/assets/img/login_bg.png");
     background-size: cover;
     background-position: center;
+    width: 100vw;
     height: 100vh;
 }
 .login_absolute{
