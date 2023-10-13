@@ -1,19 +1,28 @@
 <?php
-$rootDir = __DIR__;
-const webUrl = "https://capicoin.online";
-require_once ( webUrl . "/depo/inc/config.php");
-dbConnect();
 session_start();
 
 // Check if the form is submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Define your database connection here
+    $servername = "localhost";
+    $username = "multistream6_capicoin_2";
+    $password = "+C@ppy126";
+    $dbname = "multistream6_capicoin_2";
+
+    // Create a database connection
+    $conn = new mysqli($servername, $username, $password, $dbname);
+
+    // Check the connection
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
 
     // Get user input
     $username = $_POST['username'];
     $password = $_POST['password'];
 
     // Query to check user credentials (change the table and column names)
-    $sql = "SELECT * FROM hm2_users WHERE username = '$username' AND password = '$password'";
+    $sql = "SELECT * FROM users WHERE username = '$username' AND password = '$password'";
     $result = $conn->query($sql);
 
     // Check if a matching user is found
