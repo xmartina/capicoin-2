@@ -17,8 +17,8 @@ require_once ('admin_header.php');
 <body>
     <div class="position-relative login_relative">
         <div class="position-absolute login_absolute">
-            <div class="login_overlay_behind position-absolute"></div>
-            <div class="position-absolute">
+            <div class="login_overlay_behind"></div>
+            <div class="position-ab">
                 <div class="py-4">
                     <h2>Admin Login</h2>
                     <p>Welcome to Admin, login to your admin dashboard using your admin details</p>
