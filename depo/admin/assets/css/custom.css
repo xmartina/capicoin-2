@@ -9,7 +9,9 @@
     margin: auto;
     top: 0;
     right: 0;
-    opacity: .2;
+    background-color: #0a0f16;
+    width:38%;
+    opacity: .9;
 }
 .admin_form{
     line-height: 1.8;
