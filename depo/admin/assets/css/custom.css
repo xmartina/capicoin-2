@@ -8,6 +8,9 @@
     right: 0;
     opacity: .8;
 }
+.admin_form{
+    line-height: 1.8;
+}
 @media (max-width: 769px) {
     html .login_relative{
         position: static !important;
