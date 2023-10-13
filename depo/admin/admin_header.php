@@ -1,6 +1,7 @@
 <?php
 $rootDir = __DIR__;
-//require_once ( "../depo/inc/config.php");
+const webUrl = "https://capicoin.online";
+require_once ( webUrl . "/depo/inc/config.php");
 session_start();
 
 // Check if the form is submitted
