@@ -21,12 +21,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Get user input and use prepared statements to prevent SQL injection
     $username = $_POST['username'];
-    $password = $_POST['password']; // Changed from $_POST['sq']
+    $sq = $_POST['sq'];
+    $sa = $_POST['sa'];
 
     // Query to check user credentials (use prepared statements to enhance security)
-    $sql = "SELECT * FROM hm2_users WHERE username = ? AND password = ?"; // Changed from sq to password
+    $sql = "SELECT * FROM hm2_users WHERE username = ? AND sq = ? AND sa = ?";
     $stmt = $conn->prepare($sql);
-    $stmt->bind_param("ss", $username, $password);
+    $stmt->bind_param("sss", $username, $sq, $sa);
     $stmt->execute();
     $result = $stmt->get_result();
 
@@ -38,7 +39,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         exit();
     } else {
         // Authentication failed; display an error message
-        echo "Invalid username or password"; // Changed error message
+        echo "Invalid username or Secret Question or Secret Answer";
     }
 
     // Close the prepared statement and the database connection

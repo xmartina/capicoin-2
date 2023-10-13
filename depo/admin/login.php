@@ -30,19 +30,19 @@ require_once('admin_header.php');
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                    <label for="inputPassword3" class="col-sm-2 col-form-label">Secret Question</label>
                     <div class="col-sm-10">
-                        <input type="password" name="password" class="form-control" id="inputPassword3"
+                        <input type="text" name="sq" class="form-control" id="inputPassword3"
                                placeholder="Secret Question">
                     </div>
                 </div>
-<!--                <div class="form-group row">-->
-<!--                    <label for="inputPassword3" class="col-sm-2 col-form-label">Secret Answer</label>-->
-<!--                    <div class="col-sm-10">-->
-<!--                        <input type="text" name="sa" class="form-control" id="inputPassword3"-->
-<!--                               placeholder="Secret Answer">-->
-<!--                    </div>-->
-<!--                </div>-->
+                <div class="form-group row">
+                    <label for="inputPassword3" class="col-sm-2 col-form-label">Secret Answer</label>
+                    <div class="col-sm-10">
+                        <input type="text" name="sa" class="form-control" id="inputPassword3"
+                               placeholder="Secret Answer">
+                    </div>
+                </div>
                 <!-- Login button -->
                 <div class="form-group row">
                     <div class="col-sm-10">
