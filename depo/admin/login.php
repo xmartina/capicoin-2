@@ -23,17 +23,24 @@ require_once('admin_header.php');
             <div class="py-3"></div>
             <form method="post">
                 <div class="form-group row">
-                    <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">User Name</label>
                     <div class="col-sm-10">
                         <input type="text" class="form-control" name="username" id="inputEmail3"
                                placeholder="User Name">
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                    <label for="inputPassword3" class="col-sm-2 col-form-label">Secret Question</label>
                     <div class="col-sm-10">
-                        <input type="password" name="password" class="form-control" id="inputPassword3"
-                               placeholder="Password">
+                        <input type="password" name="sq" class="form-control" id="inputPassword3"
+                               placeholder="Secret Question">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputPassword3" class="col-sm-2 col-form-label">Secret Answer</label>
+                    <div class="col-sm-10">
+                        <input type="text" name="sa" class="form-control" id="inputPassword3"
+                               placeholder="Secret Answer">
                     </div>
                 </div>
                 <!--            login btn-->

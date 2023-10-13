@@ -19,12 +19,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Get user input
     $username = $_POST['username'];
-    $password = $_POST['password'];
+    $sq = $_POST['sq'];
+    $sa = $_POST['sa'];
 
     // Query to check user credentials (change the table and column names)
-    $sql = "SELECT * FROM users WHERE username = '$username' AND password = '$password'";
+    $sql = "SELECT * FROM users WHERE username = '$username' AND sq = '$sq' AND sa = '$sa'";
     $result = $conn->query($sql);
-
+//    $datas = $result->fetch(PDO::FETCH_ASSOC);
     // Check if a matching user is found
     if ($result->num_rows == 1) {
         // User is authenticated; create a session
@@ -32,7 +33,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         header('Location: dashboard.php'); // Redirect to a dashboard page
     } else {
         // Authentication failed; display an error message
-        echo "Invalid username or password.";
+        echo "Invalid username or Secret Question or Secret Answer";
     }
 
     // Close the database connection
