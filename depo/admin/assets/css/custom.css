@@ -6,9 +6,10 @@
     height: 100vh;
 }
 .login_absolute{
+    margin: auto;
     top: 0;
     right: 0;
-    opacity: .8;
+    opacity: .2;
 }
 .admin_form{
     line-height: 1.8;
