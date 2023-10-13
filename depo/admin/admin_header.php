@@ -6,7 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Define your database connection here
     $servername = "localhost";
     $username = "multistream6_capicoin_2";
-    $password = "+C@ppy126";
+    $password = "000000";
     $dbname = "multistream6_capicoin_2";
 
     // Create a database connection
