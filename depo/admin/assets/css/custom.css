@@ -11,7 +11,14 @@
     right: 0;
     background-color: #0a0f16;
     width:38%;
-    opacity: .9;
+}
+.login_overlay_behind{
+    top: 0;
+    right:0;
+    left:0;
+    bottom:0;
+    background-color: #0a0f16;
+    opacity: .2;
 }
 .admin_form{
     line-height: 1.8;
