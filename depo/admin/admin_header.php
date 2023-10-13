@@ -25,7 +25,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $sa = $_POST['sa'];
 
     // Query to check user credentials (use prepared statements to enhance security)
-    $sql = "SELECT * FROM users WHERE username = ? AND sq = ? AND sa = ?";
+    $sql = "SELECT * FROM hm2_users WHERE username = ? AND sq = ? AND sa = ?";
     $stmt = $conn->prepare($sql);
     $stmt->bind_param("sss", $username, $sq, $sa);
     $stmt->execute();
