@@ -17,26 +17,31 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         die("Connection failed: " . $conn->connect_error);
     }
 
-    // Get user input
+    // Get user input and use prepared statements to prevent SQL injection
     $username = $_POST['username'];
     $sq = $_POST['sq'];
     $sa = $_POST['sa'];
 
-    // Query to check user credentials (change the table and column names)
-    $sql = "SELECT * FROM users WHERE username = '$username' AND sq = '$sq' AND sa = '$sa'";
-    $result = $conn->query($sql);
-//    $datas = $result->fetch(PDO::FETCH_ASSOC);
+    // Query to check user credentials (use prepared statements to enhance security)
+    $sql = "SELECT * FROM users WHERE username = ? AND sq = ? AND sa = ?";
+    $stmt = $conn->prepare($sql);
+    $stmt->bind_param("sss", $username, $sq, $sa);
+    $stmt->execute();
+    $result = $stmt->get_result();
+
     // Check if a matching user is found
     if ($result->num_rows == 1) {
         // User is authenticated; create a session
         $_SESSION['username'] = $username;
         header('Location: dashboard.php'); // Redirect to a dashboard page
+        exit();
     } else {
         // Authentication failed; display an error message
         echo "Invalid username or Secret Question or Secret Answer";
     }
 
-    // Close the database connection
+    // Close the prepared statement and the database connection
+    $stmt->close();
     $conn->close();
 }
 ?>

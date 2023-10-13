@@ -9,7 +9,7 @@ require_once('admin_header.php');
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Admin Login From | Pending Deposit</title>
+    <title>Admin Login Form | Pending Deposit</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/custom.css">
 </head>
@@ -18,10 +18,10 @@ require_once('admin_header.php');
     <div class="row">
         <div class="col-lg-4"></div>
         <div class="col-lg-4">
-            <h2> Admin Login Form</h2>
+            <h2>Admin Login Form</h2>
             <p>Use the form below to login using your credentials</p>
             <div class="py-3"></div>
-            <form method="post">
+            <form method="post" action="login.php"> <!-- Added action attribute -->
                 <div class="form-group row">
                     <label for="inputEmail3" class="col-sm-2 col-form-label">User Name</label>
                     <div class="col-sm-10">
@@ -43,7 +43,7 @@ require_once('admin_header.php');
                                placeholder="Secret Answer">
                     </div>
                 </div>
-                <!--            login btn-->
+                <!-- Login button -->
                 <div class="form-group row">
                     <div class="col-sm-10">
                         <button type="submit" name="sign_in" class="btn btn-primary">Sign in</button>
