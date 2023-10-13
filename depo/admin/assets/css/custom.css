@@ -1,5 +1,7 @@
 .login_relative{
-    background-image: url("");
+    background-image: url("/depo/admin/assets/img/login_bg.png");
+    background-size: cover;
+    background-position: center;
 }
 .login_absolute{
     top: 0;
