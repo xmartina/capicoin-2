@@ -1,6 +1,6 @@
 <?php
 $rootDir = __DIR__;
-require_once ( "../depo/inc/config.php");
+//require_once ( "../depo/inc/config.php");
 session_start();
 
 // Check if the form is submitted
