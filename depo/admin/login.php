@@ -16,21 +16,34 @@ require_once ('admin_header.php');
 </head>
 <body>
     <div class="py-4">
-
-        <form>
-            <div class="form-group row">
-                <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
-                <div class="col-sm-10">
-                    <input type="text" class="form-control" name="username" id="inputEmail3" placeholder="User Name">
-                </div>
+        <div class="row">
+            <div class="col-lg-4"></div>
+            <div class="col-lg-4">
+                <h2> Admin Login Form</h2>
+                <p>Use the form below to login using your credentials</p>
+                <div class="py-3"></div>
+                <form>
+                    <div class="form-group row">
+                        <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" name="username" id="inputEmail3" placeholder="User Name">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                        <div class="col-sm-10">
+                            <input type="password" name="password" class="form-control" id="inputPassword3" placeholder="Password">
+                        </div>
+                    </div>
+                    <!--            login btn-->
+                    <div class="form-group row">
+                        <div class="col-sm-10">
+                            <button type="submit" name="sign_in" class="btn btn-primary">Sign in</button>
+                        </div>
+                    </div>
+                </form>
             </div>
-            <div class="form-group row">
-                <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
-                <div class="col-sm-10">
-                    <input type="password" name="password" class="form-control" id="inputPassword3" placeholder="Password">
-                </div>
-            </div>
-        </form>
+        </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" ></script>
