@@ -53,7 +53,7 @@
                     <input disabled class="form-control crypto-select " id="btc-address" value="brtererwewe"
                            type="text">
                 </div> <!-- form-group// -->
-                <div class="form-group input-group">
+                <div class="form-group">
                     <div class="depo-amunt pb-3">
                         Amount to deposit.
                     </div>
