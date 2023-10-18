@@ -15,9 +15,9 @@
             <form action="">
                 <div class="form-group input-group">
                     <div class="row">
-                        <div class="col-sm-4 px-0">User Name</div>
-                        <div class="col-sm-8 px-0 pl-2">
-                            <input disabled name="" class="form-control" value="<?= $_SESSION['username'] ?>"
+                        <div class="col-sm-4 pr-0">User Name</div>
+                        <div class="col-sm-8 pl-2">
+                            <input disabled name="username" class="form-control w-100" value="<?= $_SESSION['username'] ?>"
                                    placeholder="Full name" type="text">
                         </div>
                     </div>
@@ -38,13 +38,15 @@
                     <div class="btc-exp">
                         Use the wallet address below to make your deposit
                     </div>
-                    <select class="form-control">
-                        <option selected=""> Select wallet address</option>
-                        <option id="btc">Bitcoin</option>
-                        <option id="eth">Ethereum</option>
-                        <option id="usdc">USD Coin</option>
-                        <option id="bnb">BNB</option>
-                    </select>
+                    <div class="pt-2">
+                        <select class="form-control">
+                            <option selected=""> Select wallet address</option>
+                            <option id="btc">Bitcoin</option>
+                            <option id="eth">Ethereum</option>
+                            <option id="usdc">USD Coin</option>
+                            <option id="bnb">BNB</option>
+                        </select>
+                    </div>
                 </div> <!-- form-group end.// -->
                 <div class="form-group input-group">
                     <input disabled class="form-control crypto-select " id="btc-address" value="brtererwewe"
