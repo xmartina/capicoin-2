@@ -21,7 +21,7 @@
                         </div>
                     </div>
                     <div class="col-sm-10">
-                        <span class="depo-stat-hd">
+                        <span class="depo-stat-hd py-4">
                         Your deposit was has been submitted successfully
                         </span>
                     </div>
