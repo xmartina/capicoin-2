@@ -58,7 +58,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $amount = $connection->real_escape_string($_POST['deposit_amount']);
 
 //    check deposit amount
-        if($amount == 0 ){
+        if($amount <= 0 ){
          ?>
             <script>
                 // Function to add a class to the element when the page loads
