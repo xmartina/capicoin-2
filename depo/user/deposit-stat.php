@@ -20,19 +20,19 @@
                             <span class="material-symbols-outlined w-100 text-center">done</span>
                         </div>
                     </div>
-                    <div class="col-sm-10">
-                        <span class="depo-stat-hd py-4">
+                    <div class="col-sm-10 pt-4">
+                        <span class="depo-stat-hd py-4 text-center">
                         Your deposit was has been submitted successfully
                         </span>
                     </div>
-                    <div class="col-sm-2"></div>
-                    <div class="col-sm-10">
+                    <div class="col-sm-2 py-4"></div>
+                    <div class="col-sm-10 py-4">
                         <span class="depo-stat-bd py-4">
                             Remember to make your deposit using the wallet addresses provided for you in the previous page for your deposit to be approved
                         </span>
 
                         <div class="redirect-das py-1">
-                            <div id="countdown">Redirecting in 10 seconds...</div>
+                            <div id="countdown">Redirecting in 10 seconds... or <span class="text-warning" onclick="location.href='../?a=account'">click here to visit you dashboard</span></div>
                         </div>
                     </div>
                 </div>
