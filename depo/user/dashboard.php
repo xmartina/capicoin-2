@@ -7,10 +7,10 @@
             <h3>
                 Deposit Form
             </h3>
-            <h4>
+            <div class="note-dash text-success text-center py-3">
                 Note: only use this form if you are ready to make a deposit now
-                <?php echo $userID; ?>
-            </h4>
+<!--                --><?php //echo $userID; ?>
+            </div>
             <form method="POST">
                 <div class="form-group input-group">
                     <div class="row align-items-center">
