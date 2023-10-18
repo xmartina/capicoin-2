@@ -17,7 +17,7 @@
                 <div class="row gy-5 gx-5 align-items-center">
                     <div class="col-sm-2 d-flex justify-content-center align-items-center">
                         <div class="circle-container d-flex justify-content-center align-items-center rounded-circle bg-success text-white p-3">
-                            <span class="material-symbols-outlined w-100">done</span>
+                            <span class="material-symbols-outlined w-100 text-center">done</span>
                         </div>
                     </div>
                     <div class="col-sm-10">
