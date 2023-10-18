@@ -42,10 +42,14 @@
                     <div class="btc-exp">
                         Use the wallet address below to make your deposit
                     </div>
-                    <div class="pt-3">
-                        <div class="row">
-                            <div class="col-sm-4 bg-dark text-light">BTC</div>
-                            <div class="col-sm-8">bc1qldk0yfuj66hs6406murakdewqs9e6drjezzdd0</div>
+                    <div class="form-group input-group">
+                        <div class="row align-items-center">
+                            <div class="col-sm-4 pr-0">BTC</div>
+                            <div class="col-sm-8 pl-2">
+                                <input disabled name="username w-100" class="form-control w-100"
+                                       value="bc1qldk0yfuj66hs6406murakdewqs9e6drjezzdd0"
+                                       placeholder="Full name" type="text">
+                            </div>
                         </div>
                     </div>
                 </div>
