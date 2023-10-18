@@ -22,6 +22,7 @@
 
     $connection = dbConnect();
     $user_id = null; // Initialize $user_id here
+    $userID = null;
 
     if (isset($_POST['login'])) {
         $username_email = $_POST['username_email'];
