@@ -39,8 +39,8 @@ if (isset($_POST['login'])) {
         $user_id = $row['id'];
         $_SESSION['username'] = $row['username'];
         $authenticatedUserID = $row['id'];
-        $_SESSION['user_id'] = $authenticatedUserID;
-        $userID = $_SESSION['user_id'];
+        $_SESSION['id'] = $authenticatedUserID;
+        $userID = $_SESSION['id'];
 
         echo "User ID: $user_id";
 //        sleep(9);

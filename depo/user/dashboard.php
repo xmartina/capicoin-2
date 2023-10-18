@@ -10,6 +10,7 @@
             <h4>
                 Note: only use this form if you are ready to make a deposit now
                 <?php echo $user_id ?>
+                <?php echo $userID ?>
             </h4>
             <form action="">
                 <div class="form-group input-group">
