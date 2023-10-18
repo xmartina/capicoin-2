@@ -14,7 +14,7 @@
         <div class="row">
             <div class="col-lg-4"></div>
             <div class="col-lg-4">
-                <div class="row">
+                <div class="row align-items-center">
                     <div class="col-sm-2 ">
                         <div class="circle-container rounded-circle bg-success text-white p-3">
                             <span class="material-symbols-outlined w-100">done</span>
