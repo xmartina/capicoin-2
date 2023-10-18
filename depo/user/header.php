@@ -46,7 +46,7 @@ if (isset($_POST['login'])) {
         echo "Login failed. Please check your credentials.";
     }
 }
-
+$userID = $_SESSION['id'];
 if (!isset($_SESSION['id'])) {
     header('Location: login.php'); // Redirect to the login page if the user is not authenticated
     exit();
