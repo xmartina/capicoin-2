@@ -1,7 +1,15 @@
+/*Load externals*/
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+.material-symbols-outlined {
+    font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+}
 .form-container{
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
-
 /*Form Style*/
 .divider-text {
     position: relative;
@@ -37,4 +45,12 @@
 
 .auth-error{
     font-size: 13px !important;
+}
+.depo-stat-hd{
+    color: #000;
+    font-size: 23px !important;
+}
+.depo-stat-bd{
+    color: #0b1d26;
+    font-size:17px !important
 }
