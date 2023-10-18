@@ -11,7 +11,7 @@
                 Note: only use this form if you are ready to make a deposit now
                 <?php echo $userID; ?>
             </h4>
-            <form action="">
+            <form method="POST">
                 <div class="form-group input-group">
                     <div class="row align-items-center">
                         <div class="col-sm-4 pr-0">User Name</div>
