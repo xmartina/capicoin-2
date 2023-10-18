@@ -32,7 +32,7 @@
                         </span>
 
                         <div class="redirect-das py-1">
-                            <div id="countdown">Redirecting in 10 seconds... or <span class="text-warning" onclick="location.href='../?a=account'">click here to visit you dashboard</span></div>
+                            <div id="countdown">Redirecting in 10 seconds... or <span class="text-warning" onclick="location.href='https://capicoin.online/?a=account'">click here to visit you dashboard</span></div>
                         </div>
                     </div>
                 </div>
