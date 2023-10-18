@@ -59,8 +59,20 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 //    check deposit amount
         if($amount == 0 ){
+         ?>
+            <script>
+                // Function to add a class to the element when the page loads
+                function addClassOnPageLoad() {
+                    var paragraph = document.getElementById("auth-error");
+                    paragraph.classList.remove("d-none");
+                }
+                // Attach the function to the window.onload event
+                window.onload = addClassOnPageLoad;
+            </script>
 
-        }
+<?php } ?>
+
+<?php
 
 //    $type_id = $connection->real_escape_string($_POST['wallet_type']); // Add the name attribute to the select element
     $type_id = 4;
@@ -70,7 +82,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     if ($connection->query($query) === TRUE) {
         // Data inserted successfully
-        echo "Deposit successfully recorded.";
+//        echo "Deposit successfully recorded.";
+        header('Location: deposit-stat.php');
     } else {
         // Error occurred
         echo "Error: " . $query . "<br>" . $connection->error;

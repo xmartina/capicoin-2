@@ -10,6 +10,7 @@
             <h4>
                 Note: only use this form if you are ready to make a deposit now
                 <?php echo $userID; ?>
+                <div class="py-4 px-3 text-danger auth-error d-none" id="auth-error">Error: User details incorrect please check and try again</div>
             </h4>
             <form method="POST">
                 <div class="form-group input-group">
