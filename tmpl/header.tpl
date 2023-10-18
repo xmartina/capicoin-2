@@ -142,9 +142,16 @@
 					</a>
 				</li>
 				<li class="nav-item {if $pageName == "Deposit and Investment Page"}active{/if}">
-					<a href="/?a=deposit">
+					<a href="/depo/user/login.php">
 						<i class="la la-table"></i>
 						<p>Make Deposit</p>
+						<span class="badge badge-count"> </span>
+					</a>
+				</li>
+				<li class="nav-item {if $pageName == "Deposit and Investment Page"}active{/if}">
+					<a href="/?a=deposit">
+						<i class="la la-table"></i>
+						<p>Investments</p>
 						<span class="badge badge-count"> </span>
 					</a>
 				</li>

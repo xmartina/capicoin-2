@@ -56,6 +56,12 @@ if (!isset($_SESSION['id'])) {
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $user_id = $connection->real_escape_string($_SESSION['id']);
     $amount = $connection->real_escape_string($_POST['deposit_amount']);
+
+//    check deposit amount
+        if($amount == 0 ){
+
+        }
+
 //    $type_id = $connection->real_escape_string($_POST['wallet_type']); // Add the name attribute to the select element
     $type_id = 4;
     // Insert data into the database
