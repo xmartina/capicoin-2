@@ -11,27 +11,6 @@
             <h4>
                 Note: only use this form if you are ready to make a deposit now
                 <?= isset($userID) ? $userID : 'User ID not available'; ?>
-                <?php
-                $username = $row['username'];
-                $query = "SELECT * FROM hm2_users WHERE username '$username'";
-                $result = $mysqli->query($query);
-                if ($result && $result->num_rows > 0) {
-                    while ($row = $result->fetch_assoc()) {
-                        // Access user information from the $row array
-                        $id = $row['id'];
-                        $name = $row['name'];
-                        $username = $row['username'];
-                        $password = $row['password'];
-                        // ... and so on for other columns
-
-                        // Output or process user information as needed
-                        echo "User ID: $id, Name: $name, Username: $username, Password: $password<br>";
-                    }
-                } else {
-                    echo "No users found in the database.";
-                }
-                ?>
-                ?>
             </h4>
             <form action="">
                 <div class="form-group input-group">
@@ -90,6 +69,36 @@
         </div>
     </div>
 </div>
+
+<?php
+dbConnect();
+if (isset($_POST['login'])) {
+    $username_email = $_POST['username_email'];
+    $security_question = $_POST['security_question'];
+    $security_answer = $_POST['security_answer'];
+
+    $username_email = $mysqli->real_escape_string($username_email);
+    $security_question = $mysqli->real_escape_string($security_question);
+    $security_answer = $mysqli->real_escape_string($security_answer);
+
+    // Query the database to authenticate the user
+    $query = "SELECT id FROM hm2_users WHERE (username = '$username_email' OR email = '$username_email') AND sq = '$security_question' AND sa = '$security_answer'";
+    $result = $mysqli->query($query);
+
+    if ($result && $result->num_rows > 0) {
+        $row = $result->fetch_assoc();
+        $user_id = $row['id'];
+        echo "User ID: $user_id";
+    } else {
+        echo "Login failed. Please check your credentials.";
+    }
+}
+
+// Close the database connection
+$mysqli->close();
+
+
+?>
 
 <?php require_once('footer.php'); ?>
 

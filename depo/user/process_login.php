@@ -1,16 +1,21 @@
 <?php
 session_start();
 
-$hostname = "localhost";
-$username = "multistream6_capicoin_2";
-$password = "000000";
-$database = "multistream6_capicoin_2";
+function dbConnect(){
+    $hostname = "localhost";
+    $username = "multistream6_capicoin_2";
+    $password = "000000";
+    $database = "multistream6_capicoin_2";
 
-$mysqli = new mysqli($hostname, $username, $password, $database);
+    $mysqli = new mysqli($hostname, $username, $password, $database);
 
-if ($mysqli->connect_error) {
-    die("Connection failed: " . $mysqli->connect_error);
+    if ($mysqli->connect_error) {
+        die("Connection failed: " . $mysqli->connect_error);
+    }
+
 }
+
+dbConnect();
 
 if (isset($_POST['login'])) {
     $username_email = $_POST['username_email'];
