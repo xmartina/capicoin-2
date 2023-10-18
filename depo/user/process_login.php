@@ -2,10 +2,10 @@
 session_start();
 
 // Sample user data (you should replace this with your database authentication system)
-$hostname = "your_database_hostname";
-$username = "your_database_username";
-$password = "your_database_password";
-$database = "your_database_name";
+$hostname = "localhost";
+$username = "multistream6_capicoin_2";
+$password = "000000";
+$database = "multistream6_capicoin_2";
 
 $mysqli = new mysqli($hostname, $username, $password, $database);
 
