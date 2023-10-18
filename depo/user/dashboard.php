@@ -43,26 +43,24 @@
                         Use the wallet address below to make your deposit
                     </div>
                     <div class="pt-3">
-                        <div class="address-btc rounded bg-gray">
-                            <div class="row">
-                                <div class="col-sm-4 bg-dark text-light">BTC</div>
-                                <div class="col-sm-8">bc1qldk0yfuj66hs6406murakdewqs9e6drjezzdd0</div>
-                            </div>
+                        <div class="row">
+                            <div class="col-sm-4 bg-dark text-light">BTC</div>
+                            <div class="col-sm-8">bc1qldk0yfuj66hs6406murakdewqs9e6drjezzdd0</div>
                         </div>
                     </div>
 
-                <div class="form-group">
-                    <div class="depo-amunt pb-3">
-                        Amount to deposit.
-                    </div>
-                    <div class="infu w-100">
-                        <input class="form-control crypto-select w-100" id="btc-address" placeholder="e.g 500"
-                               type="text">
-                    </div>
-                </div> <!-- form-group// -->
-                <div class="form-group">
-                    <button type="submit" class="btn btn-primary btn-block"> Submit deposit for review</button>
-                </div> <!-- form-group// -->
+                    <div class="form-group">
+                        <div class="depo-amunt pb-3">
+                            Amount to deposit.
+                        </div>
+                        <div class="infu w-100">
+                            <input class="form-control crypto-select w-100" id="btc-address" placeholder="e.g 500"
+                                   type="text">
+                        </div>
+                    </div> <!-- form-group// -->
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary btn-block"> Submit deposit for review</button>
+                    </div> <!-- form-group// -->
             </form>
         </div>
     </div>
