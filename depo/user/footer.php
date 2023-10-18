@@ -1,6 +1,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
 <script>
-    var clipboard = new ClipboardJS('#copy-button');
+    var clipboard = new ClipboardJS('#copy-btc');
+    var clipboard = new ClipboardJS('#copy-eth');
+    var clipboard = new ClipboardJS('#copy-Usdt');
 
     // clipboard.on('success', function(e) {
     //     alert('Copied to clipboard: ' + e.text);

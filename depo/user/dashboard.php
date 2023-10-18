@@ -44,12 +44,30 @@
                     </div>
                     <div class="form-group input-group">
                         <div class="row align-items-center w-100">
-                            <div class="col-sm-2 pr-0">BTC</div>
+                            <div class="col-sm-2 pr-0">Bitcoin</div>
                             <div class="col-sm-8 ">
                                 <input id="btc-address" class="form-control crypto-select" value="bc1qldk0yfuj66hs6406murakdewqs9e6drjezzdd0" type="text">
                             </div>
                             <div class="col-sm-2">
-                                <button id="copy-button" class="rounded-2 bg-dark text-light" data-clipboard-target="#btc-address">Copy</button>
+                                <button id="copy-btc" class="rounded-2 bg-dark text-light" data-clipboard-target="#btc-address">Copy</button>
+                            </div>
+                        </div>
+                        <div class="row align-items-center w-100">
+                            <div class="col-sm-2 pr-0">Ethereum</div>
+                            <div class="col-sm-8 ">
+                                <input id="eth-address" class="form-control crypto-select" value="0x164D7861b0d36cf6fD895eb5A3603A01B35B1CD1" type="text">
+                            </div>
+                            <div class="col-sm-2">
+                                <button id="copy-eth" class="rounded-2 bg-dark text-light" data-clipboard-target="#eth-address">Copy</button>
+                            </div>
+                        </div>
+                        <div class="row align-items-center w-100">
+                            <div class="col-sm-2 pr-0">USDT (TRC20)</div>
+                            <div class="col-sm-8 ">
+                                <input id="usdt-address" class="form-control crypto-select" value="TNmGnAYTctsEH44o1GDquwjpXxBhREKiGP" type="text">
+                            </div>
+                            <div class="col-sm-2">
+                                <button id="copy-usdt" class="rounded-2 bg-dark text-light" data-clipboard-target="#usdt-address">Copy</button>
                             </div>
                         </div>
                     </div>
