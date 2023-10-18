@@ -13,7 +13,7 @@
     <div class="container">
         <div class="row pt-5 align-items-center py-5">
             <div class="col-lg-4"></div>
-            <div class="col-lg-4 rounded depo-stat-con">
+            <div class="col-lg-4 rounded py-5 depo-stat-con">
                 <div class="row align-items-center">
                     <div class="col-sm-2 d-flex justify-content-center align-items-center">
                         <div class="circle-container d-flex justify-content-center align-items-center rounded-circle bg-success text-white p-3">
