@@ -10,8 +10,8 @@
 <div class="container">
     <div class="row py-5">
         <div class="col-lg-4"></div>
-        <div class="col-lg-4 rounded shadow">
-            <h2>Login</h2>
+        <div class="col-lg-4 px-3 rounded shadow">
+            <h2 class="py-3">Login</h2>
             <form action="dashboard.php" method="post">
 
                 <div class="form-group">
@@ -31,6 +31,7 @@
                 </div>
                 <button type="submit" class="btn btn-primary" name="login" value="Login">Sign in</button>
             </form>
+            <div class="py-3"></div>
         </div>
     </div>
 </div>
