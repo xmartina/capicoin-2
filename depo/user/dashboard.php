@@ -49,13 +49,12 @@ $mysqli->close();
     <div class="col-lg-4">
         <div class="form-container rounded py-4 px-3 ">
             <h3>
-                Hello <?= $_SESSION['username'] ?> <br>
-                <!-- Assuming you have set $authenticatedUserID in your authentication code -->
-                <!--                    --><?php //= isset($authenticatedUserID) ? $authenticatedUserID : "User ID not available"; ?>
+                Hello <?= isset($_SESSION['username']) ? $_SESSION['username'] : 'Guest' ?> <br>
+                <?= isset($authenticatedUserID) ? $authenticatedUserID : 'User ID not available'; ?>
             </h3>
             <h4>
                 Note: only use this form if you are ready to make a deposit now
-                <?php echo $userID ?>
+                <?= isset($userID) ? $userID : 'User ID not available'; ?>
             </h4>
             <form action="">
                 <div class="form-group input-group">
