@@ -1,13 +1,17 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
 <script>
-    document.getElementById('copy-button').addEventListener('click', function() {
-        var btcAddress = document.getElementById('btc-address');
-        navigator.clipboard.writeText(btcAddress.value).then(function() {
-            alert('Copied to clipboard: ' + btcAddress.value);
-        }).catch(function(err) {
-            console.error('Unable to copy: ', err);
-        });
+    var clipboard = new ClipboardJS('#copy-button');
+
+    clipboard.on('success', function(e) {
+        alert('Copied to clipboard: ' + e.text);
+        e.clearSelection();
+    });
+
+    clipboard.on('error', function(e) {
+        alert('Unable to copy. Please select and copy manually.');
     });
 </script>
+
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <!-- jQuery code to show/hide the second select based on the first select -->
 

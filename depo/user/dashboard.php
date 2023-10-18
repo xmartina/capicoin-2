@@ -46,10 +46,10 @@
                         <div class="row align-items-center w-100">
                             <div class="col-sm-2 pr-0">BTC</div>
                             <div class="col-sm-8 ">
-                                <input id="btc-address" disabled class="form-control crypto-select" value="bc1qldk0yfuj66hs6406murakdewqs9e6drjezzdd0" type="text">
+                                <input id="btc-address" class="form-control crypto-select" value="bc1qldk0yfuj66hs6406murakdewqs9e6drjezzdd0" type="text">
                             </div>
                             <div class="col-sm-2">
-                                <button id="copy-button rounded-2 bg-dark text-light">Copy</button>
+                                <button id="copy-button" class="rounded-2 bg-dark text-light" data-clipboard-target="#btc-address">Copy</button>
                             </div>
                         </div>
                     </div>
