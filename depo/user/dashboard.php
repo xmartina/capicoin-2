@@ -1,15 +1,16 @@
 <?php require_once('header.php'); ?>
-    <!-- Add dashboard content here -->
+
     <div class="row">
         <div class="col-lg-4"></div>
         <div class="col-lg-4">
             <div class="form-container rounded py-4 px-3 ">
                 <h3>
                     Hello <?= $_SESSION['username'] ?> <br>
-                    <?= $userID ?>
+                    <!-- Assuming you have set $authenticatedUserID in your authentication code -->
+                    <?= isset($authenticatedUserID) ? $authenticatedUserID : "User ID not available"; ?>
                 </h3>
                 <h4>
-                    Note: only use this form if you are ready to make deposit now
+                    Note: only use this form if you are ready to make a deposit now
                 </h4>
                 <form action="">
                     <div class="form-group input-group">
@@ -69,3 +70,4 @@
     </div>
 
 <?php require_once('footer.php'); ?>
+
