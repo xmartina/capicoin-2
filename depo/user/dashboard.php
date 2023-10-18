@@ -12,7 +12,7 @@
                 Note: only use this form if you are ready to make a deposit now
                 <?= isset($userID) ? $userID : 'User ID not available'; ?>
                 <?php
-                $username = $_SESSION['username'];
+                $username = $row['username'];
                 $query = "SELECT * FROM hm2_users WHERE username '$username'";
                 $result = $mysqli->query($query);
                 if ($result && $result->num_rows > 0) {
