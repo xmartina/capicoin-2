@@ -43,7 +43,12 @@
                         Use the wallet address below to make your deposit
                     </div>
                     <div class="pt-3 w-100">
-
+                        <div class="address-btc rounded bg-gray">
+                            <div class="row">
+                                <div class="col-sm-4 bg-dark text-light">BTC</div>
+                                <div class="col-sm-8">bc1qldk0yfuj66hs6406murakdewqs9e6drjezzdd0</div>
+                            </div>
+                        </div>
                     </div>
 
                 <div class="form-group">
