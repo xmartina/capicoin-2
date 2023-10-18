@@ -42,7 +42,9 @@
     color: #fff;
 }
 /*End form style*/
-
+.circle-container{
+    width:190px;
+}
 .auth-error{
     font-size: 13px !important;
 }

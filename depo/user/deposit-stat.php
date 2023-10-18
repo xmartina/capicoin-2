@@ -15,8 +15,10 @@
             <div class="col-lg-4"></div>
             <div class="col-lg-4">
                 <div class="row">
-                    <div class="col-sm-2 rounded-circle bg-success text-white p-3">
-                        <span class="material-symbols-outlined w-100">done</span>
+                    <div class="col-sm-2 ">
+                        <div class="circle-container rounded-circle bg-success text-white p-3">
+                            <span class="material-symbols-outlined w-100">done</span>
+                        </div>
                     </div>
                     <div class="col-sm-10">
                         <span class="depo-stat-hd">
