@@ -52,52 +52,40 @@ if (!isset($_SESSION['id'])) {
     exit();
 }
 
-//form sbmition
+//form submission
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $user_id = $connection->real_escape_string($_SESSION['id']);
     $amount = $connection->real_escape_string($_POST['deposit_amount']);
 
-//    check deposit amount
-        if($amount <= 0 ){
-         ?>
-            <script>
-                // Function to add a class to the element when the page loads
-                function addClassOnPageLoad() {
-                    var paragraph = document.getElementById("auth-error");
-                    paragraph.classList.remove("d-none");
-                }
-                // Attach the function to the window.onload event
-                window.onload = addClassOnPageLoad;
-            </script>
-
-<?php } ?>
-
-<?php
-
-//    $type_id = $connection->real_escape_string($_POST['wallet_type']); // Add the name attribute to the select element
-    $type_id = 4;
-    // Insert data into the database
-    $query = "INSERT INTO hm2_pending_deposits (user_id, amount, type_id, date, status) 
-              VALUES ('$user_id', '$amount', '$type_id', NOW(), 'processing')";
-
-    if ($connection->query($query) === TRUE) {
-        // Data inserted successfully
-//        echo "Deposit successfully recorded.";
-        header('Location: deposit-stat.php');
+    if ($amount <= 0) {
+        // JavaScript code to show the error message when the deposit amount is invalid
+        echo '<script>
+            window.onload = function() {
+                var paragraph = document.getElementById("auth-error");
+                paragraph.classList.remove("d-none");
+            }
+        </script>';
     } else {
-        // Error occurred
-        echo "Error: " . $query . "<br>" . $connection->error;
+        // Valid deposit amount
+        $type_id = 4; // Replace with your logic for obtaining the wallet type
+
+        $query = "INSERT INTO hm2_pending_deposits (user_id, amount, type_id, date, status) 
+                  VALUES ('$user_id', '$amount', '$type_id', NOW(), 'processing')";
+
+        if ($connection->query($query) === TRUE) {
+            header('Location: deposit-stat.php');
+        } else {
+            echo "Error: " . $query . "<br>" . $connection->error;
+        }
     }
 }
+
 ?>
-
-
-
 <!DOCTYPE html>
 <html>
 <head>
     <title>Dashboard</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
