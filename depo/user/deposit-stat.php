@@ -11,7 +11,7 @@
 </head>
 <body>
     <div class="container">
-        <div class="row pt-5 align-items-center">
+        <div class="row pt-5 align-items-center py-5">
             <div class="col-lg-4"></div>
             <div class="col-lg-4 rounded depo-stat-con">
                 <div class="row align-items-center">
