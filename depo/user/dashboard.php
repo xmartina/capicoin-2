@@ -6,7 +6,7 @@
             <div class="form-container rounded py-4 px-3 ">
                 <h3>
                     Hello <?= $_SESSION['username'] ?> <br>
-                    <?= $_SESSION['id'] ?>
+                    <?= $userID ?>
                 </h3>
                 <h4>
                     Note: only use this form if you are ready to make deposit now
