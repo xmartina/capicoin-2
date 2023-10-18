@@ -6,11 +6,10 @@
         <div class="form-container rounded py-4 px-3 ">
             <h3>
                 Hello <?= isset($_SESSION['username']) ? $_SESSION['username'] : 'Guest' ?> <br>
-                <?= isset($user_id) ? $user_id : 'User ID not available'; ?>
             </h3>
             <h4>
                 Note: only use this form if you are ready to make a deposit now
-                <?= isset($user_id) ? $user_id : 'User ID not available'; ?>
+                <?php echo $user_id ?>
             </h4>
             <form action="">
                 <div class="form-group input-group">
