@@ -11,9 +11,9 @@
 </head>
 <body>
     <div class="container">
-        <div class="row">
+        <div class="row pt-5">
             <div class="col-lg-4"></div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 rounded depo-stat-con">
                 <div class="row align-items-center">
                     <div class="col-sm-2 ">
                         <div class="circle-container rounded-circle bg-success text-white p-3">
@@ -27,7 +27,7 @@
                     </div>
                     <div class="col-sm-2"></div>
                     <div class="col-sm-10">
-                        <span class="depo-stat-bd">
+                        <span class="depo-stat-bd py-4">
                             Remember to make your deposit using the wallet addresses provided for you in the previous page for your deposit to be approved
                         </span>
 
