@@ -1,8 +1,4 @@
 <?php
-require_once('process_login.php');
-//session_start();
-
-
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
@@ -25,7 +21,7 @@ function dbConnect()
 }
 
 $connection = dbConnect();
-$user_id = null; // Initialize $user_id here
+$user_id = null;
 
 if (isset($_POST['login'])) {
     $username_email = $_POST['username_email'];
@@ -43,25 +39,21 @@ if (isset($_POST['login'])) {
         $row = $result->fetch_assoc();
         $user_id = $row['id'];
         $_SESSION['username'] = $row['username'];
-        $authenticatedUserID = $row['id'];
-        $_SESSION['id'] = $authenticatedUserID;
-        $userID = $_SESSION['id'];
-
-        echo "User ID: $user_id";
-//        sleep(9);
-//        header('Location: dashboard.php');
+        $_SESSION['id'] = $user_id; // Store the user's ID in the session
+        header('Location: dashboard.php');
         exit();
     } else {
         echo "Login failed. Please check your credentials.";
     }
 }
 
-
-if (!isset($_SESSION['username'])) {
+if (!isset($_SESSION['id'])) {
     header('Location: login.php'); // Redirect to the login page if the user is not authenticated
     exit();
 }
 ?>
+
+
 
 <!DOCTYPE html>
 <html>
