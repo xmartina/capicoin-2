@@ -51,6 +51,13 @@
                 <div class="form-group input-group">
                     <input disabled class="form-control crypto-select " id="btc-address" value="brtererwewe"
                            type="text">
+                    <select class="form-control w-100" name="wallet address">
+                        <option selected="" id="btc-address"> Select wallet address</option>
+                        <option id="btc">Bitcoin</option>
+                        <option id="eth">Ethereum</option>
+                        <option id="usdc">USD Coin</option>
+                        <option id="bnb">BNB</option>
+                    </select>
                 </div> <!-- form-group// -->
                 <div class="form-group">
                     <div class="depo-amunt pb-3">
