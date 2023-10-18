@@ -44,6 +44,7 @@
 /*End form style*/
 .circle-container{
     width:190px;
+    height:190px;
 }
 .auth-error{
     font-size: 13px !important;
