@@ -17,7 +17,7 @@
                     <div class="row align-items-center">
                         <div class="col-sm-4 pr-0">User Name</div>
                         <div class="col-sm-8 pl-2">
-                            <input disabled name="username" class="form-control w-100"
+                            <input disabled name="username w-100" class="form-control w-100"
                                    value="<?= $_SESSION['username'] ?>"
                                    placeholder="Full name" type="text">
                         </div>
