@@ -1,13 +1,12 @@
 <?php require_once('header.php'); ?>
-
-    <h2>Welcome to the Dashboard, <?= $_SESSION['username'] ?></h2>
     <!-- Add dashboard content here -->
     <div class="row">
         <div class="col-lg-4"></div>
         <div class="col-lg-4">
             <div class="form-container rounded py-4 px-3 ">
                 <h3>
-                    Hello <?= $_SESSION['username'] ?>
+                    Hello <?= $_SESSION['username'] ?> <br>
+                    <?= $_SESSION['id'] ?>
                 </h3>
                 <h4>
                     Note: only use this form if you are ready to make deposit now
