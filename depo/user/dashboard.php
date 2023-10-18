@@ -14,7 +14,7 @@
             </h4>
             <form action="">
                 <div class="form-group input-group">
-                    <div class="row">
+                    <div class="row align-items-center">
                         <div class="col-sm-4 pr-0">User Name</div>
                         <div class="col-sm-8 pl-2">
                             <input disabled name="username" class="form-control w-100"
