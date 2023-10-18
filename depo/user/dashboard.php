@@ -50,7 +50,9 @@
                                        value="bc1qldk0yfuj66hs6406murakdewqs9e6drjezzdd0"
                                        placeholder="Full name" type="text">
                             </div>
-                            <div class="col-sm-2"></div>
+                            <div class="col-sm-2">
+                                <button id="copy-button" class="text-light bg-dark rounded">Copy</button>
+                            </div>
                         </div>
                     </div>
                 </div>
