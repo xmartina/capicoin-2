@@ -17,7 +17,8 @@
                     <div class="row">
                         <div class="col-sm-4 pr-0">User Name</div>
                         <div class="col-sm-8 pl-2">
-                            <input disabled name="username" class="form-control w-100" value="<?= $_SESSION['username'] ?>"
+                            <input disabled name="username" class="form-control w-100"
+                                   value="<?= $_SESSION['username'] ?>"
                                    placeholder="Full name" type="text">
                         </div>
                     </div>
@@ -50,6 +51,13 @@
                 </div> <!-- form-group end.// -->
                 <div class="form-group input-group">
                     <input disabled class="form-control crypto-select " id="btc-address" value="brtererwewe"
+                           type="text">
+                </div> <!-- form-group// -->
+                <div class="form-group input-group">
+                    <div class="depo-amunt pb-3">
+                        Amount to deposit
+                    </div>
+                    <input class="form-control crypto-select " id="btc-address" placeholder="e.g 500"
                            type="text">
                 </div> <!-- form-group// -->
                 <div class="form-group">
