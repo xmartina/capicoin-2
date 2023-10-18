@@ -43,26 +43,8 @@
                         Use the wallet address below to make your deposit
                     </div>
                     <div class="pt-3 w-100">
-                        <select class="form-control w-100" id="wallet-selection">
-                            <option selected="">Select wallet address</option>
-                            <option id="btc">Bitcoin</option>
-                            <option id="eth">Ethereum</option>
-                            <option id="usdc">USD Coin</option>
-                            <option id="bnb">BNB</option>
-                        </select>
-                    </div> <!-- form-group end.// -->
 
-                    <div class="form-group input-group">
-                        <input disabled class="form-control crypto-select" id="btc-address" value="brtererwewe" type="text">
-                        <input disabled class="form-control crypto-select d-none" id="eth-address" value="brtererwewe" type="text">
-                        <input disabled class="form-control crypto-select d-none" id="usdc-address" value="brtererwewe" type="text">
-                        <input disabled class="form-control crypto-select d-none" id="bnb-address" value="brtererwewe" type="text">
-                    </div> <!-- form-group// -->
-
-
-
-
-
+                    </div>
 
                 <div class="form-group">
                     <div class="depo-amunt pb-3">
