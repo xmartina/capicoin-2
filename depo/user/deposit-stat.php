@@ -31,6 +31,9 @@
                             Remember to make your deposit using the wallet addresses provided for you in the previous page for your deposit to be approved
                         </span>
 
+                        <div class="redirect-das py-1">
+                            <div id="countdown">Redirecting in 10 seconds...</div>
+                        </div>
                     </div>
                 </div>
             </div>

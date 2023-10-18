@@ -16,6 +16,30 @@
     });
 </script>
 <script>
+    // Function to update the countdown and redirect
+    function countdown() {
+        var seconds = 10; // Set the number of seconds to countdown
+
+        function updateCountdown() {
+            var countdownElement = document.getElementById("countdown");
+            countdownElement.innerHTML = "Redirecting in " + seconds + " seconds...";
+            seconds--;
+
+            if (seconds < 0) {
+                // Redirect to dashboard.php after 10 seconds
+                window.location.href = "dashboard.php";
+            }
+        }
+
+        updateCountdown(); // Call the function immediately to display the initial countdown
+
+        var countdownInterval = setInterval(updateCountdown, 1000); // Update every 1 second
+    }
+
+    // Call the countdown function when the page loads
+    window.onload = countdown;
+</script>
+<script>
     var clipboardBTC = new ClipboardJS('#copy-btc');
     var clipboardETH = new ClipboardJS('#copy-eth');
     var clipboardUSDT = new ClipboardJS('#copy-usdt'); // Define clipboard for USDT
