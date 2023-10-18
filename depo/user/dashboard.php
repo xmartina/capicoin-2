@@ -57,8 +57,10 @@
                     <div class="depo-amunt pb-3">
                         Amount to deposit
                     </div>
-                    <input class="form-control crypto-select " id="btc-address" placeholder="e.g 500"
-                           type="text">
+                    <div class="infu">
+                        <input class="form-control crypto-select " id="btc-address" placeholder="e.g 500"
+                               type="text">
+                    </div>
                 </div> <!-- form-group// -->
                 <div class="form-group">
                     <button type="submit" class="btn btn-primary btn-block"> Submit deposit for review</button>
