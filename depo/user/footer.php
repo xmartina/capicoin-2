@@ -21,9 +21,9 @@
         $('#wallet-selection').on('change', function () {
             var selectedValue = $(this).find(':selected').attr('id');
             if (selectedValue === 'btc') {
-                $('#address-selection').show();
+                $('#btc-address').show();
             } else if (selectedValue === 'eth') {
-                $('#address-selection').show();
+                $('#eth-address').show();
             } else if (selectedValue === 'usdc') {
                 $('#address-selection').show();
             } else if (selectedValue === 'bnb') {
