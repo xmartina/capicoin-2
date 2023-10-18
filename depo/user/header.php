@@ -51,6 +51,25 @@ if (!isset($_SESSION['id'])) {
     header('Location: login.php'); // Redirect to the login page if the user is not authenticated
     exit();
 }
+
+//form sbmition
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $user_id = $connection->real_escape_string($_SESSION['id']);
+    $amount = $connection->real_escape_string($_POST['deposit_amount']);
+//    $type_id = $connection->real_escape_string($_POST['wallet_type']); // Add the name attribute to the select element
+    $type_id = 4;
+    // Insert data into the database
+    $query = "INSERT INTO hm2_pending_deposits (user_id, amount, type_id, date, status) 
+              VALUES ('$user_id', '$amount', '$type_id', NOW(), 'processing')";
+
+    if ($connection->query($query) === TRUE) {
+        // Data inserted successfully
+        echo "Deposit successfully recorded.";
+    } else {
+        // Error occurred
+        echo "Error: " . $query . "<br>" . $connection->error;
+    }
+}
 ?>
 
 

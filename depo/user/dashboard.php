@@ -77,7 +77,7 @@
                             Amount to deposit.
                         </div>
                         <div class="infu w-100">
-                            <input class="form-control crypto-select w-100" id="btc-address" placeholder="e.g 500"
+                            <input name="deposit_amount" class="form-control crypto-select w-100" id="btc-address" placeholder="e.g 500"
                                    type="text">
                         </div>
                     </div> <!-- form-group// -->
