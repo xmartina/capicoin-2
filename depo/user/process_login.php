@@ -31,6 +31,7 @@ if (isset($_POST['login'])) {
         // Authentication successful
         $row = $result->fetch_assoc();
         $_SESSION['username'] = $row['username']; // Store the user's identity in a session variable
+        $userId = $row['id'];
         header('Location: dashboard.php'); // Redirect to the dashboard
         exit();
     } else {
