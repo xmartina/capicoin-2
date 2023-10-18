@@ -31,12 +31,15 @@ if (isset($_POST['login'])) {
 
     if ($result && $result->num_rows > 0) {
         $row = $result->fetch_assoc();
+        $user_id = $row['id'];
         $_SESSION['username'] = $row['username'];
         $authenticatedUserID = $row['id'];
         $_SESSION['user_id'] = $authenticatedUserID;
         $userID = $_SESSION['user_id'];
 
-        header('Location: dashboard.php');
+        echo "User ID: $user_id";
+        sleep(9);
+        header('Location: dashboard.php' );
         exit();
     } else {
         echo "Login failed. Please check your credentials.";
