@@ -34,13 +34,18 @@
                     </select>
                     <input name="" class="form-control" placeholder="Phone number" type="text">
                 </div>-->
+
+                <!-- Include jQuery library -->
+
+
+                <!-- Your HTML code -->
                 <div class="form-group input-group">
                     <div class="btc-exp">
                         Use the wallet address below to make your deposit
                     </div>
                     <div class="pt-3 w-100">
-                        <select class="form-control w-100">
-                            <option selected=""> Select wallet address</option>
+                        <select class="form-control w-100" id="wallet-selection">
+                            <option selected="">Select wallet address</option>
                             <option id="btc">Bitcoin</option>
                             <option id="eth">Ethereum</option>
                             <option id="usdc">USD Coin</option>
@@ -48,23 +53,27 @@
                         </select>
                     </div>
                 </div> <!-- form-group end.// -->
+
                 <div class="form-group input-group">
-                    <input disabled class="form-control crypto-select " id="btc-address" value="brtererwewe"
-                           type="text">
-                    <select class="form-control w-100" name="wallet address">
-                        <option selected="" id="btc-address"> Select wallet address</option>
-                        <option id="btc">Bitcoin</option>
-                        <option id="eth">Ethereum</option>
-                        <option id="usdc">USD Coin</option>
-                        <option id="bnb">BNB</option>
+                    <input disabled class="form-control crypto-select" id="btc-address" value="brtererwewe" type="text">
+                    <select class="form-control w-100" id="address-selection" name="wallet_address" style="display: none;">
+                        <option id="btc-address">djsjkalsklklskldkas</option>
+                        <option id="eth-address">0xxjksdkmksdsdasdrfswd</option>
+                        <option id="usdc-address">sdhaskm,klwesa</option>
+                        <option id="bnb-address">Bnsjsdaslkksd</option>
                     </select>
                 </div> <!-- form-group// -->
+
+
+
+
+
                 <div class="form-group">
                     <div class="depo-amunt pb-3">
                         Amount to deposit.
                     </div>
                     <div class="infu">
-                        <input class="form-control crypto-select " id="btc-address" placeholder="e.g 500"
+                        <input class="form-control crypto-select" id="btc-address" placeholder="e.g 500"
                                type="text">
                     </div>
                 </div> <!-- form-group// -->
