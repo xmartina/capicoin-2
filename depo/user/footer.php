@@ -20,17 +20,8 @@
     $(document).ready(function () {
         $('#wallet-selection').on('change', function () {
             var selectedValue = $(this).find(':selected').attr('id');
-            if (selectedValue === 'btc') {
-                $('#address-selection').show().attr(':selected');
-            } else if (selectedValue === 'eth') {
-                $('#address-selection').show().attr(':selected');;
-            } else if (selectedValue === 'usdc') {
-                $('#address-selection').show();
-            } else if (selectedValue === 'bnb') {
-                $('#address-selection').show();
-            } else {
-                $('#address-selection').hide();
-            }
+            $('#address-selection option').hide();
+            $('#' + selectedValue + '-address').show().prop('selected', true);
         });
     });
 </script>
