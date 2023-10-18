@@ -5,7 +5,7 @@
 </head>
 <body>
 <h2>Login</h2>
-<form action="process_login.php" method="post">
+<form action="dashboard.php" method="post">
     <label for="username_email">Username or Email:</label>
     <input type="text" name="username_email" required><br><br>
 
