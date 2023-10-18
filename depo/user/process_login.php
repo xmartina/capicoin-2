@@ -34,7 +34,7 @@ if (isset($_POST['login'])) {
     $query = "SELECT * FROM hm2_users WHERE (username = '$username_email' OR email = '$username_email') AND sq = '$security_question' AND sa = '$security_answer'";
     $result = $connection->query($query);
 
-    if ($result && $result->num_rows > 0) {
+
         $row = $result->fetch_assoc();
         $user_id = $row['id'];
         $_SESSION['username'] = $row['username'];
@@ -45,10 +45,8 @@ if (isset($_POST['login'])) {
         echo "User ID: $user_id";
 //        sleep(9);
         header('Location: dashboard.php');
-        exit();
-    } else {
-        echo "Login failed. Please check your credentials.";
-    }
+
+
 }
 
 $connection->close();
