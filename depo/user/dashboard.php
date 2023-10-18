@@ -42,7 +42,7 @@
                     <div class="btc-exp">
                         Use the wallet address below to make your deposit
                     </div>
-                    <div class="pt-3 w-100">
+                    <div class="pt-3">
                         <div class="address-btc rounded bg-gray">
                             <div class="row">
                                 <div class="col-sm-4 bg-dark text-light">BTC</div>
