@@ -15,8 +15,8 @@
             <div class="col-lg-4"></div>
             <div class="col-lg-4 rounded depo-stat-con">
                 <div class="row align-items-center">
-                    <div class="col-sm-2 ">
-                        <div class="circle-container rounded-circle bg-success text-white p-3">
+                    <div class="col-sm-2 d-flex justify-content-center align-items-center">
+                        <div class="circle-container d-flex justify-content-center align-items-center rounded-circle bg-success text-white p-3">
                             <span class="material-symbols-outlined w-100">done</span>
                         </div>
                     </div>
