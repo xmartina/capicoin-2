@@ -48,7 +48,7 @@
                             <div class="col-sm-8">bc1qldk0yfuj66hs6406murakdewqs9e6drjezzdd0</div>
                         </div>
                     </div>
-
+                </div>
                     <div class="form-group">
                         <div class="depo-amunt pb-3">
                             Amount to deposit.
