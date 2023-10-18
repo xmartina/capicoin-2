@@ -10,7 +10,6 @@
             <h4>
                 Note: only use this form if you are ready to make a deposit now
                 <?php echo $userID; ?>
-                <div class="py-4 px-3 text-danger text-center auth-error d-none" id="auth-error">Error: Amount too small or lesser than 0 please check and try again</div>
             </h4>
             <form method="POST">
                 <div class="form-group input-group">
@@ -76,6 +75,7 @@
                     <div class="form-group">
                         <div class="depo-amunt pb-3">
                             Amount to deposit.
+                            <div class="py-4 px-3 text-danger text-center auth-error d-none" id="auth-error">Error: Amount too small or lesser than 0 please check and try again</div>
                         </div>
                         <div class="infu w-100">
                             <input name="deposit_amount" class="form-control crypto-select w-100" id="btc-address" placeholder="e.g 500"
