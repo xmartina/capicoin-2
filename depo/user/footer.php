@@ -27,7 +27,7 @@
 
             if (seconds < 0) {
                 // Redirect to dashboard.php after 10 seconds
-                window.location.href = "dashboard.php";
+                window.location.href = "/?a=account";
             }
         }
 
