@@ -50,8 +50,8 @@
                     <div class="depo-amunt pb-3">
                         Amount to deposit.
                     </div>
-                    <div class="infu">
-                        <input class="form-control crypto-select" id="btc-address" placeholder="e.g 500"
+                    <div class="infu w-100">
+                        <input class="form-control crypto-select w-100" id="btc-address" placeholder="e.g 500"
                                type="text">
                     </div>
                 </div> <!-- form-group// -->
