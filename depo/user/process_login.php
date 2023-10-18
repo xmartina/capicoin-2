@@ -49,5 +49,4 @@ if (isset($_POST['login'])) {
 
 }
 
-$connection->close();
 ?>
