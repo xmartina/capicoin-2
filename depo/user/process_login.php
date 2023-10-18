@@ -43,8 +43,8 @@ if (isset($_POST['login'])) {
         $userID = $_SESSION['user_id'];
 
         echo "User ID: $user_id";
-        sleep(9);
-        header('Location: dashboard.php');
+//        sleep(9);
+//        header('Location: dashboard.php');
         exit();
     } else {
         echo "Login failed. Please check your credentials.";
