@@ -6,11 +6,12 @@
     <link rel="stylesheet" href="login-css.css">
 </head>
 <body>
-<h2>Login</h2>
+
 <div class="container">
-    <div class="row">
+    <div class="row py-5">
         <div class="col-lg-4"></div>
-        <div class="col-lg-4">
+        <div class="col-lg-4 rounded shadow">
+            <h2>Login</h2>
             <form action="dashboard.php" method="post">
 
                 <div class="form-group">

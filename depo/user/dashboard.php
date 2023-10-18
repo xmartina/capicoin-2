@@ -1,6 +1,6 @@
 <?php require_once('header.php'); ?>
 
-<div class="row">
+<div class="row py-5">
     <div class="col-lg-4"></div>
     <div class="col-lg-4">
         <div class="form-container rounded py-4 px-3 ">
