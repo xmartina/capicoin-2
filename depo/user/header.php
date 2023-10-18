@@ -1,6 +1,6 @@
 <?php
 require_once('process_login.php');
-session_start();
+//session_start();
 
 if (!isset($_SESSION['username'])) {
     header('Location: login.php'); // Redirect to the login page if the user is not authenticated

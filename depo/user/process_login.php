@@ -44,7 +44,7 @@ if (isset($_POST['login'])) {
 
         echo "User ID: $user_id";
 //        sleep(9);
-//        header('Location: dashboard.php');
+        header('Location: dashboard.php');
         exit();
     } else {
         echo "Login failed. Please check your credentials.";
