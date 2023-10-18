@@ -13,8 +13,10 @@ function dbConnect(){
         die("Connection failed: " . $mysqli->connect_error);
     }
 
-}
+    return $mysqli;
 
+}
+$connection = dbConnect();
 dbConnect();
 
 if (isset($_POST['login'])) {
@@ -46,5 +48,5 @@ if (isset($_POST['login'])) {
     }
 }
 
-$mysqli->close();
+$connection->close();
 ?>
