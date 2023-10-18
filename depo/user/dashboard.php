@@ -38,7 +38,6 @@
                 <!-- Include jQuery library -->
 
 
-                <!-- Your HTML code -->
                 <div class="form-group input-group">
                     <div class="btc-exp">
                         Use the wallet address below to make your deposit
@@ -56,13 +55,14 @@
 
                 <div class="form-group input-group">
                     <input disabled class="form-control crypto-select" id="btc-address" value="brtererwewe" type="text">
-                    <select class="form-control w-100" id="address-selection" name="wallet_address" style="display: none;">
-                        <option id="btc-address">djsjkalsklklskldkas</option>
-                        <option id="eth-address">0xxjksdkmksdsdasdrfswd</option>
-                        <option id="usdc-address">sdhaskm,klwesa</option>
-                        <option id="bnb-address">Bnsjsdaslkksd</option>
+                    <select class="form-control w-100" id="address-selection" name="wallet_address">
+                        <option value="btc-address" style="display: none;">djsjkalsklklskldkas</option>
+                        <option value="eth-address" style="display: none;">0xxjksdkmksdsdasdrfswd</option>
+                        <option value="usdc-address" style="display: none;">sdhaskm,klwesa</option>
+                        <option value="bnb-address" style="display: none;">Bnsjsdaslkksd</option>
                     </select>
                 </div> <!-- form-group// -->
+
 
 
 
