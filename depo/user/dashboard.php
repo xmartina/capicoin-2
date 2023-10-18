@@ -44,7 +44,7 @@
                     </div>
                     <div class="form-group input-group">
                         <div class="row align-items-center w-100">
-                            <div class="col-sm-4 pr-0">BTC</div>
+                            <div class="col-sm-2 pr-0">BTC</div>
                             <div class="col-sm-8 ">
                                 <input disabled name="username w-100" class="form-control w-100"
                                        value="bc1qldk0yfuj66hs6406murakdewqs9e6drjezzdd0"
