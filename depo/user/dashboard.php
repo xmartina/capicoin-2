@@ -5,7 +5,7 @@
     <div class="col-lg-4">
         <div class="form-container rounded py-4 px-3 ">
             <h3>
-                Hello <?= isset($_SESSION['username']) ? $_SESSION['username'] : 'Guest' ?> <br>
+                Deposit Form
             </h3>
             <h4>
                 Note: only use this form if you are ready to make a deposit now
