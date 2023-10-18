@@ -38,8 +38,8 @@
                     <div class="btc-exp">
                         Use the wallet address below to make your deposit
                     </div>
-                    <div class="pt-2">
-                        <select class="form-control">
+                    <div class="pt-3 w-100">
+                        <select class="form-control w-100">
                             <option selected=""> Select wallet address</option>
                             <option id="btc">Bitcoin</option>
                             <option id="eth">Ethereum</option>
