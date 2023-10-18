@@ -31,8 +31,14 @@ if (isset($_POST['login'])) {
         // Authentication successful
         $row = $result->fetch_assoc();
         $_SESSION['username'] = $row['username']; // Store the user's identity in a session variable
-        $userId = $row['id'];
+        $authenticatedUserID = $row['id']; // Get the authenticated user's ID
         header('Location: dashboard.php'); // Redirect to the dashboard
+
+        // Now you have the authenticatedUserID, and you can use it as needed.
+        // For example, you can insert it into the session as well:
+        $_SESSION['user_id'] = $authenticatedUserID;
+        $userID = $_SESSION['user_id'];
+
         exit();
     } else {
         echo "Login failed. Please check your credentials.";
