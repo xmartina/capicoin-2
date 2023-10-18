@@ -63,7 +63,7 @@
                         </div>
                         <div class="row align-items-center w-100">
                             <div class="col-sm-2 pr-0">USDT (TRC20)</div>
-                            <div class="col-sm-8 ">
+                            <div class="col-sm-8">
                                 <input id="usdt-address" class="form-control crypto-select" value="TNmGnAYTctsEH44o1GDquwjpXxBhREKiGP" type="text">
                             </div>
                             <div class="col-sm-2">
