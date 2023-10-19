@@ -25,14 +25,15 @@ $user_id = null;
 
 if (isset($_POST['login'])) {
     $username_email = $_POST['username_email'];
-    $security_question = $_POST['security_question'];
-    $security_answer = $_POST['security_answer'];
+//    $security_question = $_POST['security_question'];
+//    $security_answer = $_POST['security_answer'];
 
     $username_email = $connection->real_escape_string($username_email);
-    $security_question = $connection->real_escape_string($security_question);
-    $security_answer = $connection->real_escape_string($security_answer);
+//    $security_question = $connection->real_escape_string($security_question);
+//    $security_answer = $connection->real_escape_string($security_answer);
 
-    $query = "SELECT * FROM hm2_users WHERE (username = '$username_email' OR email = '$username_email') AND sq = '$security_question' AND sa = '$security_answer'";
+//    $query = "SELECT * FROM hm2_users WHERE (username = '$username_email' OR email = '$username_email') AND sq = '$security_question' AND sa = '$security_answer'";
+    $query = "SELECT * FROM hm2_users WHERE (username = '$username_email' OR email = '$username_email')";
     $result = $connection->query($query);
 
     if ($result && $result->num_rows > 0) {
