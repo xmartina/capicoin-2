@@ -104,12 +104,13 @@
                     </div>
             </div> <!-- deposit-group// -->
             <div class="depo-2">
-                <div class="py-5 px-4">
+                <div class="pt-5 pb-3 px-4 conf-depo text-center ">
                     Confirm your deposit
                 </div>
+                <div class="make-depo text-center">
+                    After making your deposit, enter your transaction id or reference id below
+                </div>
                 <div class="depo">
-                    you are making a deposit of <span class="depo-amount">DEPOSIT AMOUNT</span>
-                    <div class="wal">to your desired wallet address</div>
                     <div class="py-4">
                         <div class="form-group">
                             <div class="depo-amunt pb-3">
