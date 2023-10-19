@@ -54,6 +54,10 @@
             $(".depo-1").slideToggle(400); // 400 milliseconds for the animation
             $(".depo-2").slideDown(600);
         });
+        $("#back-amount-form").click(function() {
+            $(".depo-2").slideToggle(400); // 400 milliseconds for the animation
+            $(".depo-1").slideDown(600);
+        });
     });
     $(document).ready(function() {
         var depositAmount = 0; // Initialize with the initial deposit amount

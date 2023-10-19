@@ -118,7 +118,14 @@
                             <input name="trans_id" class="form-control crypto-select w-100" id="trans_id" placeholder="Input your transaction id here" type="text">
                         </div>
                         <div class="form-group py-3">
-                            <button type="submit" class="btn btn-primary btn-block"> Submit deposit for review</button>
+                            <div class="row">
+                                <div class="col-sm-5">
+                                    <div class="btn btn-primary btn-block" id="back-amount-form">Prev</div>
+                                </div>
+                                <div class="col-sm-7">
+                                    <button type="submit" class="btn btn-primary btn-block"> Submit deposit for review</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
