@@ -104,7 +104,7 @@
                     </div>
             </div> <!-- deposit-group// -->
             <div class="depo-2">
-                <div class="pt-5 pb-3 px-4 conf-depo text-center ">
+                <div class="pt-5 pb-3 px-3 conf-depo text-center ">
                     Confirm your deposit
                 </div>
                 <div class="make-depo text-center">
