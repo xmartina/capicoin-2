@@ -47,6 +47,35 @@
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <!-- jQuery code to show/hide the second select based on the first select -->
+<script>
+    $(document).ready(function() {
+        $("#confirm-form").click(function() {
+            $(".depo-1").slideToggle(400); // 400 milliseconds for the animation
+            $(".depo-2").slideDown(600);
+        });
+    });
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function() {
+        var depositAmount = 0; // Initialize with the initial deposit amount
+
+        // Click event handler for the "Next" button
+        $("#confirm-form").click(function() {
+            // Replace "DEPOSIT AMOUNT" with the actual deposit amount in the span
+            $(".depo-amount").text(depositAmount);
+
+            // Show the "Confirm your deposit" section
+            $(".depo-2").show();
+        });
+
+        // Assuming you have some logic to set the deposit amount, you can update it here
+        // For example, if you retrieve the deposit amount from an input field with the ID "btc-address":
+        depositAmount = parseFloat($("#btc-address").val());
+    });
+</script>
+
+</script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/js/bootstrap.min.js"></script>
 </body>
