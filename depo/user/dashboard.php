@@ -116,7 +116,7 @@
                             <div class="depo-amunt pb-3">
                                 Enter your (Transaction Id / Transaction Reference Id / Reference Id )
                             </div>
-                            <input name="trans_id" class="form-control crypto-select w-100" id="trans_id" placeholder="Input your transaction id here" type="text">
+                            <input  class="form-control crypto-select w-100" id="trans_id" placeholder="Input your transaction id here" type="text">
                         </div>
                         <div class="form-group py-3">
                             <div class="row">
