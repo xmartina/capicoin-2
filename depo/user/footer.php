@@ -49,8 +49,10 @@
 <!-- jQuery code to show/hide the second select based on the first select -->
 <script>
     $(document).ready(function() {
+        var depositAmount;
         $(".depo-2").hide();
         $("#confirm-form").click(function() {
+            depositAmount = $("#deposit-amount").val();
             $(".depo-1").slideToggle(400); // 400 milliseconds for the animation
             $(".depo-2").slideDown(600);
         });
