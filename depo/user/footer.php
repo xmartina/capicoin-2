@@ -59,22 +59,6 @@
             $(".depo-1").slideDown(600);
         });
     });
-    $(document).ready(function() {
-        var depositAmount = 0; // Initialize with the initial deposit amount
-
-        // Click event handler for the "Next" button
-        $("#confirm-form").click(function() {
-            // Replace "DEPOSIT AMOUNT" with the actual deposit amount in the span
-            $(".depo-amount").text(depositAmount);
-
-            // Show the "Confirm your deposit" section
-            $(".depo-2").show();
-        });
-
-        // Assuming you have some logic to set the deposit amount, you can update it here
-        // For example, if you retrieve the deposit amount from an input field with the ID "btc-address":
-        depositAmount = parseFloat($("#depo-amount").val());
-    });
 </script>
 
 </script>
