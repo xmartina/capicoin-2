@@ -69,9 +69,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     } else {
         // Valid deposit amount
         $type_id = 4; // Replace with your logic for obtaining the wallet type
+        $ec = 1006;
+        $fields = "N;";
+        $trans_status = "new";
 
-        $query = "INSERT INTO hm2_pending_deposits (user_id, amount, type_id, date, status) 
-                  VALUES ('$user_id', '$amount', '$type_id', NOW(), 'processing')";
+        $query = "INSERT INTO hm2_pending_deposits (ec, fields, user_id, amount, type_id, date, status) 
+                  VALUES ('$ec', '$fields', '$user_id', '$amount', '$type_id', NOW(), '$trans_status')";
 
         if ($connection->query($query) === TRUE) {
             header('Location: deposit-stat.php');
