@@ -85,7 +85,7 @@
                     <div class="form-group">
                         <div class="row">
                             <div class="col-sm-4 offset-8 ">
-                                <button class="btn btn-primary btn-block">Next</button>
+                                <div class="btn btn-primary btn-block">Next</div>
                             </div>
                             <button type="submit" class="btn btn-primary btn-block"> Submit deposit for review</button>
                         </div>
