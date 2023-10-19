@@ -90,7 +90,7 @@
                             </div>
                         </div>
                         <div class="infu w-100">
-                            <input name="deposit_amount" class="form-control crypto-select w-100" id="btc-address"
+                            <input name="deposit_amount" class="form-control crypto-select w-100" id="deposit-amount"
                                    placeholder="e.g 500"
                                    type="text">
                         </div>
