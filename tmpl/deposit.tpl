@@ -155,7 +155,8 @@
                     {/section}
                     
                     
-                    
+{*                    Deposit Wallet Section*}
+
 {*                     {section name=p loop=$ps}*}
 {*                    {if $ps[p].status}*}
 {*                        <div class="px-3">*}
@@ -164,6 +165,10 @@
 {*                        </div>*}
 {*                    {/if}*}
 {*                    {/section}*}
+
+{*                        End Deposit Wallet Section*}
+
+
                     </div>
                     <button class="btn bg-info px-3 py-2 text-light" type=submit value="Spend">Submit</buttton>
                 </form>
