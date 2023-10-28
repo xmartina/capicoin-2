@@ -43,6 +43,18 @@
                         <div class="btc-exp">
                             Use the wallet address below to make your deposit
                         </div>
+
+                        <div class="my-4">
+                            <div class="col-auto my-1">
+                                <label class="mr-sm-2" for="inlineFormCustomSelect">Select your preferred address</label>
+                                <select class="custom-select" id="inlineFormCustomSelect" name="ec_type">
+                                    <option class="walletAddressTrig1" value="1">Bitcoin</option>
+                                    <option class="walletAddressTrig1" value="2">Ethereum</option>
+                                    <option class="walletAddressTrig1" value="3">USDT ( TRC20 )</option>
+                                </select>
+                            </div>
+                        </div>
+
                         <div class="form-group input-group">
                             <div class="row align-items-center walletAddress1 w-100">
                                 <div class="col-sm-2 pr-0">Bitcoin</div>

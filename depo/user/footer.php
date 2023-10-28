@@ -7,10 +7,54 @@
         $(".walletAddress1").addClass("d-none");
         $(".walletAddress2").addClass("d-none");
         $(".walletAddress3").addClass("d-none");
-    });
 
-    $(document).click(function() {
 
+        // Revile wallet address onclick
+        $(".walletAddressTrig1").click(function(e) {
+            e.stopPropagation(); // Prevent the click event from propagating to the document
+
+            $(".walletAddress1").removeClass("d-none");
+            if (!$(".walletAddress2").hasClass("d-none")) {
+                return;
+            } else {
+                $(".walletAddress2").addClass("d-none");
+            }
+            if (!$(".walletAddress3").hasClass("d-none")) {
+                // return;
+            } else {
+                $(".walletAddress3").addClass("d-none");
+            }
+        });
+        $(".walletAddressTrig2").click(function(e) {
+            e.stopPropagation(); // Prevent the click event from propagating to the document
+
+            $(".walletAddress2").removeClass("d-none");
+            if (!$(".walletAddress1").hasClass("d-none")) {
+                return;
+            } else {
+                $(".walletAddress1").addClass("d-none");
+            }
+            if (!$(".walletAddress3").hasClass("d-none")) {
+                // return;
+            } else {
+                $(".walletAddress3").addClass("d-none");
+            }
+        });
+        $(".walletAddressTrig3").click(function(e) {
+            e.stopPropagation(); // Prevent the click event from propagating to the document
+
+            $(".walletAddress3").removeClass("d-none");
+            if (!$(".walletAddress1").hasClass("d-none")) {
+                return;
+            } else {
+                $(".walletAddress1").addClass("d-none");
+            }
+            if (!$(".walletAddress2").hasClass("d-none")) {
+                // return;
+            } else {
+                $(".walletAddress2").addClass("d-none");
+            }
+        });
     });
 </script>
 
