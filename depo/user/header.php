@@ -56,6 +56,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         echo "Invalid deposit amount";
     } elseif (empty($ec_type)) {
         echo "Please select a wallet address to complete your transaction";
+    } elseif (!in_array($ec_type, ['1', '2', '3'])) {
+        echo "Invalid wallet address selection";
     } else {
         // Replace this logic with your own to determine $type_id
         $type_id = 4;
