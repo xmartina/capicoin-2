@@ -48,9 +48,9 @@
                             <div class="col-auto my-1">
                                 <label class="mr-sm-2" for="inlineFormCustomSelect">Select your preferred address</label>
                                 <select class="custom-select" id="inlineFormCustomSelect" name="ec_type">
-                                    <option class="walletAddressTrig1" value="1">Bitcoin</option>
-                                    <option class="walletAddressTrig2" value="2">Ethereum</option>
-                                    <option class="walletAddressTrig3" value="3">USDT ( TRC20 )</option>
+                                    <option value="1">Bitcoin</option>
+                                    <option value="2">Ethereum</option>
+                                    <option value="3">USDT (TRC20)</option>
                                 </select>
                             </div>
                         </div>

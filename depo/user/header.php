@@ -91,5 +91,27 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <title>Dashboard</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Initially hide all wallet addresses
+            $(".walletAddress1, .walletAddress2, .walletAddress3").addClass("d-none");
+
+            // Handle the select change event
+            $("#inlineFormCustomSelect").change(function() {
+                var selectedValue = $(this).val();
+                $(".walletAddress1, .walletAddress2, .walletAddress3").addClass("d-none"); // Hide all
+
+                if (selectedValue === "1") {
+                    $(".walletAddress1").removeClass("d-none");
+                } else if (selectedValue === "2") {
+                    $(".walletAddress2").removeClass("d-none");
+                } else if (selectedValue === "3") {
+                    $(".walletAddress3").removeClass("d-none");
+                }
+            });
+        });
+    </script>
+
 </head>
 <body>
