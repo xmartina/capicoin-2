@@ -4,9 +4,9 @@
 <script>
     $(document).ready(function() {
         // Add the "d-none" class to the element with ID "walletAddressTrig1"
-        $("#walletAddressTrig1").addClass("d-none");
-        $("#walletAddressTrig2").addClass("d-none");
-        $("#walletAddressTrig3").addClass("d-none");
+        $(".walletAddressTrig1").addClass("d-none");
+        $(".walletAddressTrig2").addClass("d-none");
+        $(".walletAddressTrig3").addClass("d-none");
     });
 </script>
 <script>
