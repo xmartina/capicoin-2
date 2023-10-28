@@ -59,22 +59,74 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $amount = $connection->real_escape_string($_POST['deposit_amount']);
     $ec_type = $connection->real_escape_string($_POST['ec_type']);
 
-    if ($amount <= 0) {
-        // JavaScript code to show the error message when the deposit amount is invalid
-        echo '<script>
-            window.onload = function() {
-                var paragraph = document.getElementById("auth-error");
-                paragraph.classList.remove("d-none");
-            }
-        </script>';
-    } elseif($ec_type == ""){
-        echo '<script>
-            window.onload = function() {
-                var paragraph = document.getElementById("addressSelectError");
-                paragraph.classList.remove("d-none");
-            }
-        </script>';
-    }
+    if ($amount <= 0) { ?>
+        <script>
+            // JavaScript code to show the error message when the deposit amount is invalid
+            document.addEventListener('DOMContentLoaded', function() {
+                var addressSelectError = document.getElementById('addressSelectError');
+                var authError = document.getElementById('auth-error');
+                var depositAmountInput = document.getElementById('deposit-amount');
+                var selectElement = document.getElementById('inlineFormCustomSelect');
+
+                if (selectElement && addressSelectError && authError && depositAmountInput) {
+                    selectElement.addEventListener('change', function() {
+                        if (selectElement.value === "") {
+                            addressSelectError.classList.remove('d-none');
+                        } else {
+                            addressSelectError.classList.add('d-none');
+                        }
+                    });
+
+                    depositAmountInput.addEventListener('input', function() {
+                        var depositAmount = parseFloat(depositAmountInput.value);
+                        if (isNaN(depositAmount) || depositAmount <= 0) {
+                            authError.classList.remove('d-none');
+                        } else {
+                            authError.classList.add('d-none');
+                        }
+                    });
+                }
+            });
+
+            // window.onload = function() {
+            //     var paragraph = document.getElementById("auth-error");
+            //     paragraph.classList.remove("d-none");
+            // }
+        </script>
+    <?php } elseif($ec_type == ""){ ?>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                var addressSelectError = document.getElementById('addressSelectError');
+                var authError = document.getElementById('auth-error');
+                var depositAmountInput = document.getElementById('deposit-amount');
+                var selectElement = document.getElementById('inlineFormCustomSelect');
+
+                if (selectElement && addressSelectError && authError && depositAmountInput) {
+                    selectElement.addEventListener('change', function() {
+                        if (selectElement.value === "") {
+                            addressSelectError.classList.remove('d-none');
+                        } else {
+                            addressSelectError.classList.add('d-none');
+                        }
+                    });
+
+                    depositAmountInput.addEventListener('input', function() {
+                        var depositAmount = parseFloat(depositAmountInput.value);
+                        if (isNaN(depositAmount) || depositAmount <= 0) {
+                            authError.classList.remove('d-none');
+                        } else {
+                            authError.classList.add('d-none');
+                        }
+                    });
+                }
+            });
+
+            // window.onload = function() {
+            //     var paragraph = document.getElementById("addressSelectError");
+            //     paragraph.classList.remove("d-none");
+            // }
+        </script>
+   <?php }
     else {
         // Valid deposit amount
         $type_id = 4; // Replace with your logic for obtaining the wallet type
