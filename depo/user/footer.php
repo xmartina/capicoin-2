@@ -1,5 +1,14 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
+<!--Hide wallet address on page load-->
+<script>
+    $(document).ready(function() {
+        // Add the "d-none" class to the element with ID "walletAddressTrig1"
+        $("#walletAddressTrig1").addClass("d-none");
+        $("#walletAddressTrig2").addClass("d-none");
+        $("#walletAddressTrig3").addClass("d-none");
+    });
+</script>
 <script>
     // Prevent form submission when the "Copy" button is clicked
     const copyButtons = document.querySelectorAll("[data-clipboard-target]");
@@ -14,15 +23,6 @@
                 // You can also add code to notify the user that the text has been copied, if needed.
             }
         });
-    });
-</script>
-<!--Hide wallet address on page load-->
-<script>
-    $(document).ready(function() {
-        // Add the "d-none" class to the element with ID "walletAddressTrig1"
-        $("#walletAddressTrig1").addClass("d-none");
-        $("#walletAddressTrig2").addClass("d-none");
-        $("#walletAddressTrig3").addClass("d-none");
     });
 </script>
 <script>
