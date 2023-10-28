@@ -76,3 +76,7 @@
     font-size: 14px;
     color: #32353a;
 }
+
+.addressSelectError{
+    font-size:10px;
+}

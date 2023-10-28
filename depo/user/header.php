@@ -57,6 +57,7 @@ if (!isset($_SESSION['id'])) {
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $user_id = $connection->real_escape_string($_SESSION['id']);
     $amount = $connection->real_escape_string($_POST['deposit_amount']);
+    $ec_type = $connection->real_escape_string($_POST['ec_type']);
 
     if ($amount <= 0) {
         // JavaScript code to show the error message when the deposit amount is invalid
@@ -66,7 +67,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 paragraph.classList.remove("d-none");
             }
         </script>';
-    } else {
+    } elseif($ec_type == ""){
+        echo '<script>
+            window.onload = function() {
+                var paragraph = document.getElementById("addressSelectError");
+                paragraph.classList.remove("d-none");
+            }
+        </script>';
+    }
+    else {
         // Valid deposit amount
         $type_id = 4; // Replace with your logic for obtaining the wallet type
         $ec = 1006;
