@@ -130,14 +130,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     else {
         // Valid deposit amount
         $type_id = 4; // Replace with your logic for obtaining the wallet type
-    if($ec_type == "1"){
-        echo $ec_type == 1006;
-    }
+    if($ec_type == "1"){ ?>
+       <?php $ec_type == 1006; ?>
+    <?php }
     elseif($ec_type == "2"){
-        echo $ec_type == 1007;
+        $ec_type == 1007;
     }
     elseif($ec_type == "3"){
-        echo $ec_type == 1008;
+        $ec_type == 1008;
     }
 
         $fields = "N;";
