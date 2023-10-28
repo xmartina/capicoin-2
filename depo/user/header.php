@@ -52,13 +52,34 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $amount = $connection->real_escape_string($_POST['deposit_amount']);
     $ec_type = $connection->real_escape_string($_POST['ec_type']);
 
-    if ($amount <= 0) {
-        echo "Invalid deposit amount";
-    } elseif (empty($ec_type)) {
-        echo "Please select a wallet address to complete your transaction";
-    } elseif (!in_array($ec_type, ['1', '2', '3'])) {
-        echo "Invalid wallet address selection";
-    } else {
+    if ($amount <= 0) { ?>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                var authError = document.getElementById('auth-error');
+                if (authError) {
+                    authError.classList.remove('d-none');
+                }
+            });
+        </script>
+    <?php } elseif (empty($ec_type)) { ?>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                var authError = document.getElementById('addressSelectError');
+                if (authError) {
+                    authError.classList.remove('d-none');
+                }
+            });
+        </script>
+    <?php } elseif (!in_array($ec_type, ['1', '2', '3'])) { ?>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                var authError = document.getElementById('addressSelectError');
+                if (authError) {
+                    authError.classList.remove('d-none');
+                }
+            });
+        </script>
+    <?php } else {
         // Replace this logic with your own to determine $type_id
         $type_id = 4;
 
