@@ -44,7 +44,7 @@
                             Use the wallet address below to make your deposit
                         </div>
                         <div class="form-group input-group">
-                            <div class="row align-items-center w-100">
+                            <div class="row align-items-center walletAddressTrig1 w-100">
                                 <div class="col-sm-2 pr-0">Bitcoin</div>
                                 <div class="col-sm-8 ">
                                     <input id="btc-address" class="form-control crypto-select"
@@ -56,7 +56,7 @@
                                     </button>
                                 </div>
                             </div>
-                            <div class="row align-items-center w-100">
+                            <div class="row align-items-center walletAddressTrig2 w-100">
                                 <div class="col-sm-2 pr-0">Ethereum</div>
                                 <div class="col-sm-8 ">
                                     <input id="eth-address" class="form-control crypto-select"
@@ -68,7 +68,7 @@
                                     </button>
                                 </div>
                             </div>
-                            <div class="row align-items-center w-100">
+                            <div class="row align-items-center walletAddressTrig3 w-100">
                                 <div class="col-sm-2 pr-0">USDT (TRC20)</div>
                                 <div class="col-sm-8">
                                     <input id="usdt-address" class="form-control crypto-select"

@@ -1,3 +1,4 @@
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
 <script>
     // Prevent form submission when the "Copy" button is clicked
@@ -13,6 +14,15 @@
                 // You can also add code to notify the user that the text has been copied, if needed.
             }
         });
+    });
+</script>
+<!--Hide wallet address on page load-->
+<script>
+    $(document).ready(function() {
+        // Add the "d-none" class to the element with ID "walletAddressTrig1"
+        $("#walletAddressTrig1").addClass("d-none");
+        $("#walletAddressTrig2").addClass("d-none");
+        $("#walletAddressTrig3").addClass("d-none");
     });
 </script>
 <script>
@@ -45,7 +55,7 @@
     var clipboardUSDT = new ClipboardJS('#copy-usdt'); // Define clipboard for USDT
 </script>
 
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 <!-- jQuery code to show/hide the second select based on the first select -->
 <script>
     $(document).ready(function() {
