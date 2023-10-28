@@ -48,7 +48,7 @@
                             <div class="col-auto my-1">
                                 <label class="mr-sm-2" for="inlineFormCustomSelect">Select your preferred address</label>
 
-                                <div class="addressSelectError my-3 text-danger text-center" id="addressSelectError">Please select a wallet address to complete your transaction</div>
+                                <div class="addressSelectError d-none my-3 text-danger text-center" id="addressSelectError">Please select a wallet address to complete your transaction</div>
 
                                 <select class="custom-select" id="inlineFormCustomSelect" name="ec_type">
                                     <option >Select</option>
