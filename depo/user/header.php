@@ -24,15 +24,8 @@ $connection = dbConnect();
 $user_id = null;
 
 if (isset($_POST['login'])) {
-    $username_email = $_POST['username_email'];
-//    $security_question = $_POST['security_question'];
-//    $security_answer = $_POST['security_answer'];
+    $username_email = $connection->real_escape_string($_POST['username_email']);
 
-    $username_email = $connection->real_escape_string($username_email);
-//    $security_question = $connection->real_escape_string($security_question);
-//    $security_answer = $connection->real_escape_string($security_answer);
-
-//    $query = "SELECT * FROM hm2_users WHERE (username = '$username_email' OR email = '$username_email') AND sq = '$security_question' AND sa = '$security_answer'";
     $query = "SELECT * FROM hm2_users WHERE (username = '$username_email' OR email = '$username_email')";
     $result = $connection->query($query);
 
@@ -47,98 +40,34 @@ if (isset($_POST['login'])) {
         echo "Login failed. Please check your credentials.";
     }
 }
-$userID = $_SESSION['id'];
+
 if (!isset($_SESSION['id'])) {
     header('Location: login.php'); // Redirect to the login page if the user is not authenticated
     exit();
 }
 
-//form submission
+// Form submission
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $user_id = $connection->real_escape_string($_SESSION['id']);
     $amount = $connection->real_escape_string($_POST['deposit_amount']);
     $ec_type = $connection->real_escape_string($_POST['ec_type']);
 
-    if ($amount <= 0) { ?>
-        <script>
-            // JavaScript code to show the error message when the deposit amount is invalid
-            document.addEventListener('DOMContentLoaded', function() {
-                var addressSelectError = document.getElementById('addressSelectError');
-                var authError = document.getElementById('auth-error');
-                var depositAmountInput = document.getElementById('deposit-amount');
-                var selectElement = document.getElementById('inlineFormCustomSelect');
+    if ($amount <= 0) {
+        echo "Invalid deposit amount";
+    } elseif (empty($ec_type)) {
+        echo "Please select a wallet address to complete your transaction";
+    } else {
+        // Replace this logic with your own to determine $type_id
+        $type_id = 4;
 
-                if (selectElement && addressSelectError && authError && depositAmountInput) {
-                    selectElement.addEventListener('change', function() {
-                        if (selectElement.value === "") {
-                            addressSelectError.classList.remove('d-none');
-                        } else {
-                            addressSelectError.classList.add('d-none');
-                        }
-                    });
-
-                    depositAmountInput.addEventListener('input', function() {
-                        var depositAmount = parseFloat(depositAmountInput.value);
-                        if (isNaN(depositAmount) || depositAmount <= 0) {
-                            authError.classList.remove('d-none');
-                        } else {
-                            authError.classList.add('d-none');
-                        }
-                    });
-                }
-            });
-
-            // window.onload = function() {
-            //     var paragraph = document.getElementById("auth-error");
-            //     paragraph.classList.remove("d-none");
-            // }
-        </script>
-    <?php } elseif($ec_type == ""){ ?>
-        <script>
-            document.addEventListener('DOMContentLoaded', function() {
-                var addressSelectError = document.getElementById('addressSelectError');
-                var authError = document.getElementById('auth-error');
-                var depositAmountInput = document.getElementById('deposit-amount');
-                var selectElement = document.getElementById('inlineFormCustomSelect');
-
-                if (selectElement && addressSelectError && authError && depositAmountInput) {
-                    selectElement.addEventListener('change', function() {
-                        if (selectElement.value === "") {
-                            addressSelectError.classList.remove('d-none');
-                        } else {
-                            addressSelectError.classList.add('d-none');
-                        }
-                    });
-
-                    depositAmountInput.addEventListener('input', function() {
-                        var depositAmount = parseFloat(depositAmountInput.value);
-                        if (isNaN(depositAmount) || depositAmount <= 0) {
-                            authError.classList.remove('d-none');
-                        } else {
-                            authError.classList.add('d-none');
-                        }
-                    });
-                }
-            });
-
-            // window.onload = function() {
-            //     var paragraph = document.getElementById("addressSelectError");
-            //     paragraph.classList.remove("d-none");
-            // }
-        </script>
-   <?php }
-    else {
-        // Valid deposit amount
-        $type_id = 4; // Replace with your logic for obtaining the wallet type
-    if($ec_type == "1"){ ?>
-       <?php $ec_type == 1006; ?>
-    <?php }
-    elseif($ec_type == "2"){
-        $ec_type == 1007;
-    }
-    elseif($ec_type == "3"){
-        $ec_type == 1008;
-    }
+        // Update $ec_type value based on user selection
+        if ($ec_type == "1") {
+            $ec_type = "1006";
+        } elseif ($ec_type == "2") {
+            $ec_type = "1007";
+        } elseif ($ec_type == "3") {
+            $ec_type = "1008";
+        }
 
         $fields = "N;";
         $trans_status = "new";
@@ -153,8 +82,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
     }
 }
-
 ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -182,6 +111,5 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             });
         });
     </script>
-
 </head>
 <body>
