@@ -4,11 +4,16 @@
 <script>
     $(document).ready(function() {
         // Add the "d-none" class to the element with ID "walletAddressTrig1"
-        $(".walletAddressTrig1").addClass("d-none");
-        $(".walletAddressTrig2").addClass("d-none");
-        $(".walletAddressTrig3").addClass("d-none");
+        $(".walletAddress1").addClass("d-none");
+        $(".walletAddress2").addClass("d-none");
+        $(".walletAddress3").addClass("d-none");
+    });
+
+    $(document).click(function() {
+
     });
 </script>
+
 <script>
     // Prevent form submission when the "Copy" button is clicked
     const copyButtons = document.querySelectorAll("[data-clipboard-target]");
