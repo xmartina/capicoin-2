@@ -63,5 +63,8 @@
     color:#383ffa;
     border: none;
     border-radius:3px;
-    padding:6px 8px
+    padding:6px 8px;
+    position:fixed;
+    bottom:24px;
+    left:12px
 }
