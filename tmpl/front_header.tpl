@@ -46,7 +46,6 @@
                 <!-- main @s -->
                 <div class="nk-main ">
                     <header class=" header header-32 has-header-main-s1 bg-dark" id="home">
-                        <div id='google_translate_element'></div>
                         <div class="fixed-con header-main header-main-s1 is-sticky is-transparent on-dark">
                             <div class="container header-container">
                                 <div class="header-wrap">
