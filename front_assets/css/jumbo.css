@@ -58,12 +58,6 @@
 
 /*google translate Dropdown */
 
-#google_translate_element{
-    position:sticky;
-    z-index:99945883 !important;
-    bottom:24px;
-    left:12px
-}
 
 #google_translate_element select{
     background:#f6edfd;

@@ -42,7 +42,6 @@
             </head>
 
             <body class="nk-body bg-white npc-landing ">
-            <div id='google_translate_element'></div>
             <div class="nk-app-root">
                 <!-- main @s -->
                 <div class="nk-main ">
@@ -65,7 +64,7 @@
                                     <nav class="header-menu" data-content="mainNav">
                                         <ul class="menu-list ms-lg-auto">
                                             <li class="translator-space">
-
+                                                <div id='google_translate_element'></div>
                                             </li>
                                             <li class="menu-item has-sub">
                                             </li>
