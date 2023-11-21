@@ -34,7 +34,7 @@
             <div class="py-3"></div>
         </div>
 
-        <div class="py-5">
+        <div class="py-5 ww d-flex align-items-center justify-content-center">
             <div class="fixed-con">
                 <div id='google_translate_element'></div>
             </div>
