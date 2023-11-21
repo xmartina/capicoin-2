@@ -22,7 +22,7 @@
 .fixed-con {
     z-index: 9724790009779558!important;
     background-color: #f7f8fc;
-    position: sticky;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -58,11 +58,10 @@
 
 /*google translate Dropdown */
 
-
 #google_translate_element select{
     background:#f6edfd;
     color:#383ffa;
     border: none;
     border-radius:3px;
-    padding:6px 8px;
+    padding:6px 8px
 }
