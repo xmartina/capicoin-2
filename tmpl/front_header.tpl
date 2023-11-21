@@ -45,7 +45,6 @@
             <div class="nk-app-root">
                 <!-- main @s -->
                 <div class="nk-main ">
-                    <div id='google_translate_element'></div>
                     <header class=" header header-32 has-header-main-s1 bg-dark" id="home">
                         <div class="fixed-con header-main header-main-s1 is-sticky is-transparent on-dark">
                             <div class="container header-container">

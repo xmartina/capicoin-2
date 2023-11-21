@@ -34,6 +34,7 @@
         </div><!-- .row -->
     </div><!-- .container -->
 </footer><!-- .footer -->
+<div id='google_translate_element'></div>
 </div>
 <!-- main @e -->
 </div>
