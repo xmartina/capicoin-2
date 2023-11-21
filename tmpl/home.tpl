@@ -8,7 +8,6 @@
 {include file="front_header.tpl"}
 {include file="home_slider.tpl"}
 </header><!-- .header -->
-<div id='google_translate_element'></div>
 <section class="section section-service pb-0" id="feature">
     <div class="container">
         <div class="row justify-content-center text-center">

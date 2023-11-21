@@ -42,6 +42,7 @@
             </head>
 
             <body class="nk-body bg-white npc-landing ">
+            <div id='google_translate_element'></div>
             <div class="nk-app-root">
                 <!-- main @s -->
                 <div class="nk-main ">
