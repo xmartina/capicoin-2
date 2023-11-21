@@ -45,6 +45,18 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.5.3/js/bootstrap.min.js"></script>
 <!-- Tidio -->
 <script src="//code.tidio.co/a4t40fjgmhm31ekbcu1gxpqjt79qcvtz.js" async></script>
+
+{*translator script*}
+<script>
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+            pageLanguage: 'en',
+            autoDisplay: 'true',
+            layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL
+        }, 'google_translate_element');
+    }
+</script>
+<script src='//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit'></script>
 </body>
 
 </html>

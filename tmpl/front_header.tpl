@@ -63,6 +63,9 @@
                                     </div><!-- .header-nav-toggle -->
                                     <nav class="header-menu" data-content="mainNav">
                                         <ul class="menu-list ms-lg-auto">
+                                            <li class="translator-space">
+                                                <div id='google_translate_element'></div>
+                                            </li>
                                             <li class="menu-item has-sub">
                                             </li>
                                             <li class="menu-item" onclick="location.href='?a=home'"><a href="#home" class="menu-link nav-link">Home</a></li>

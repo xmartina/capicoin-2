@@ -91,7 +91,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         } elseif ($ec_type == "3") {
             $ec_type = "1008";
         }
-
         $fields = "N;";
         $trans_status = "new";
 
