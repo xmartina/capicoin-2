@@ -37,6 +37,12 @@
                     </div>
                 </div>
             </div>
+            <!--    google translator-->
+            <div class="py-5 col-lg-4 offset-4">
+                <div class="fixed-con">
+                    <div id='google_translate_element'></div>
+                </div>
+            </div>
 
         </div>
     </div>
