@@ -33,6 +33,13 @@
             </form>
             <div class="py-3"></div>
         </div>
+
+        <div class="py-5">
+            <div class="fixed-con">
+                <div id='google_translate_element'></div>
+            </div>
+        </div>
+
     </div>
 </div>
 
@@ -40,5 +47,18 @@
 <!-- jQuery code to show/hide the second select based on the first select -->
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/js/bootstrap.min.js"></script>
+
+<!--translator-->
+<script>
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+            pageLanguage: 'en',
+            autoDisplay: 'true',
+            layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL
+        }, 'google_translate_element');
+    }
+</script>
+<script src='//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit'></script>
+
 </body>
 </html>
